@@ -163,6 +163,35 @@
   }
   .more .btn { margin-top: 1.5rem; }
 
+  [hidden] { display: none !important; }
+
+  /* Vidéos (format vertical 9:16) */
+  .vid { margin: 1rem 0 0; max-width: 20rem; }
+  .vid video {
+    display: block; width: 100%; aspect-ratio: 9 / 16;
+    border-radius: 12px; background: #000; object-fit: contain;
+  }
+  .vid-cap { margin-top: .5rem; font-size: .95rem; color: var(--muted); }
+
+  /* Produits Edmark (espace masqué jusqu'à la fin de la formation) */
+  .eprods { display: grid; gap: 1rem; margin-top: 1.25rem; }
+  .eprod { padding: 1rem; background: #fff; border: 1px solid var(--line); border-radius: 12px; }
+  .eprod-img { aspect-ratio: 4 / 3; border-radius: 10px; background: #e7efe9; margin-bottom: .8rem; }
+  .eprod h4 { font-family: Georgia, "Times New Roman", serif; font-size: 1.15rem; line-height: 1.2; margin: 0 0 .3rem; }
+  .eprod p { margin: 0 0 .6rem; }
+  .eprod .eprice { color: var(--forest); font-weight: 700; }
+  .eprod .btn { display: flex; width: 100%; margin-top: .25rem; }
+
+  /* Témoignages (section masquée tant qu'il n'y a pas de vrais témoignages) */
+  .testi { padding: 2.5rem 0 3rem; border-top: 1px solid var(--line); background: #fff; }
+  .testi .lead { color: var(--muted); }
+  .tcard { margin: 1rem 0 0; padding: 1.1rem 1.15rem; background: var(--paper); border-left: 4px solid var(--leaf); border-radius: 0 12px 12px 0; }
+  .tcard blockquote { margin: 0 0 .6rem; font-family: Georgia, "Times New Roman", serif; font-size: 1.15rem; line-height: 1.45; }
+  .tcard figcaption strong { display: block; }
+  .tcard figcaption span { color: var(--muted); font-size: .95rem; }
+  .tshot { display: block; width: 100%; max-width: 26rem; margin-top: 1rem; border-radius: 12px; border: 1px solid var(--line); }
+  .testi .btn { margin-top: 1.5rem; }
+
   /* Prochaine étape */
   .next { background: var(--forest); color: #fff; padding: 3rem 0; }
   .next h2 { margin-bottom: 1rem; }
@@ -356,11 +385,33 @@
         <span class="soon">Bientôt disponible</span>
         <p>Je propose des produits Edmark pour accompagner votre hygiène de vie au quotidien : Splina, Cocolagen, Chekop, et d'autres références de la gamme.</p>
         <p class="note">Ces produits accompagnent une bonne hygiène de vie ; pour toute question de santé particulière, demandez toujours l'avis d'un professionnel de santé.</p>
+
+        <!-- ESPACE PRODUITS EDMARK (masqué).
+             Quand la formation Edmark est terminée : 1) retirer l'attribut hidden ci-dessous,
+             2) retirer le badge « Bientôt disponible » plus haut, 3) remplir une fiche par produit
+             (photo, nom, courte description, prix). Copier le bloc <article> pour chaque produit.
+             Chaque texte a une version française (data-t-fr) et anglaise (data-t-en). -->
+        <div class="eprods" id="edmark-produits" hidden>
+          <article class="eprod">
+            <div class="eprod-img" role="img" aria-label="Photo du produit"></div>
+            <h4 data-t-fr="Nom du produit" data-t-en="Product name">Nom du produit</h4>
+            <p data-t-fr="Courte description du produit." data-t-en="Short product description.">Courte description du produit.</p>
+            <p class="eprice" data-t-fr="Prix : à définir" data-t-en="Price: to be set">Prix : à définir</p>
+            <a class="btn btn-wa" href="https://wa.me/237677635069?text=Bonjour%20Emmanuel%2C%20je%20voudrais%20commander%20un%20produit%20Edmark." data-t-fr="Commander sur WhatsApp" data-t-en="Order on WhatsApp">Commander sur WhatsApp</a>
+          </article>
+        </div>
       </div>
 
       <div class="item">
         <h3>Machines et outils de menuiserie</h3>
         <p>Vente de machines de menuiserie bois d'occasion et de leurs divers outils de coupe, pour équiper ou renforcer votre atelier à moindre coût.</p>
+        <!-- Pour ajouter une autre vidéo : copier le bloc <figure> ci-dessous, déposer le fichier dans le dossier "videos" et changer les noms. -->
+        <figure class="vid">
+          <video controls playsinline preload="metadata" poster="pub-machines-poster.jpg" aria-label="Vidéo : machines et outils de menuiserie">
+            <source src="pub-machines.mp4" type="video/mp4">
+          </video>
+          <figcaption class="vid-cap" data-t-fr="Nos machines et outils en vidéo" data-t-en="Our machines and tools on video">Nos machines et outils en vidéo</figcaption>
+        </figure>
       </div>
 
       <div class="item">
@@ -379,6 +430,26 @@
       </div>
 
       <a class="btn btn-wa" href="https://wa.me/237677635069?text=Bonjour%20Emmanuel%2C%20je%20voudrais%20discuter%20de%20mon%20besoin.">Discuter de mon besoin sur WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- ESPACE TÉMOIGNAGES (masqué).
+       Quand tu as de VRAIS témoignages avec l'accord des clients : retirer l'attribut hidden,
+       puis remplacer le texte, le nom et l'activité. Copier le bloc <figure> pour en ajouter.
+       Pour une capture d'écran WhatsApp : déposer l'image dans un dossier "temoignages"
+       et ajouter <img class="tshot" src="temoignages/nom.jpg" alt="Témoignage client" loading="lazy">. -->
+  <section class="testi" id="temoignages" hidden>
+    <div class="wrap">
+      <h2 data-t-fr="Ils m'ont fait confiance" data-t-en="They trusted me">Ils m'ont fait confiance</h2>
+      <p class="lead" data-t-fr="L'avis de clients et de partenaires." data-t-en="Feedback from clients and partners.">L'avis de clients et de partenaires.</p>
+      <figure class="tcard">
+        <blockquote data-t-fr="« Texte du témoignage du client. »" data-t-en="“Customer testimonial text.”">« Texte du témoignage du client. »</blockquote>
+        <figcaption>
+          <strong data-t-fr="Nom du client" data-t-en="Client name">Nom du client</strong>
+          <span data-t-fr="Activité, ville" data-t-en="Business, city">Activité, ville</span>
+        </figcaption>
+      </figure>
+      <a class="btn btn-wa" href="https://wa.me/237677635069?text=Bonjour%20Emmanuel%2C%20je%20voudrais%20partager%20mon%20t%C3%A9moignage." data-t-fr="Partager mon témoignage" data-t-en="Share my testimonial">Partager mon témoignage</a>
     </div>
   </section>
 
@@ -558,7 +629,7 @@
   'I have paid, send the proof',0,0];
   var nodes = [], orig = [], w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null), n;
   while ((n = w.nextNode())) {
-    if (!n.nodeValue.trim() || n.parentNode.closest('script,style,#langBtn,#shareBtn')) continue;
+    if (!n.nodeValue.trim() || n.parentNode.closest('script,style,#langBtn,#shareBtn,.vid,[data-t-en]')) continue;
     nodes.push(n); orig.push(n.nodeValue);
   }
   var meta = document.querySelector('meta[name=description]');
@@ -578,6 +649,8 @@
         nd.nodeValue = o.slice(0, p) + EN[i] + o.slice(p + t.length);
       } else { nd.nodeValue = o; }
     });
+    /* Textes ajoutés après coup (légendes, témoignages, Edmark) : traduits par leurs attributs data-t-fr / data-t-en */
+    [].forEach.call(document.querySelectorAll('[data-t-en]'), function (e) { e.textContent = e.getAttribute(l === 'en' ? 'data-t-en' : 'data-t-fr'); });
     document.title = l === 'en' ? titleEn : titleFr;
     meta.setAttribute('content', l === 'en' ? metaEn : metaFr);
     waEls.forEach(function (a) {
@@ -587,8 +660,7 @@
       a.setAttribute('href', 'https://wa.me/237677635069?text=' + encodeURIComponent(msg));
     });
     phs.forEach(function (p) { var fr = p.getAttribute('data-fr'); p.setAttribute('placeholder', l === 'en' ? fr.replace('ex.', 'e.g.') : fr); });
-    [].forEach.call(document.querySelectorAll('.out'), function (o) { o.hidden = true; });
-    document.getElementById('shareBtn').firstChild.nodeValue = l === 'en' ? 'Share' : 'Partager';
+    [].forEach.call(document.querySelectorAll('.out'), function (o) { o.hidden = true; });    document.getElementById('shareBtn').firstChild.nodeValue = l === 'en' ? 'Share' : 'Partager';
     var b = document.getElementById('langBtn');
     b.firstChild.nodeValue = l === 'en' ? 'Français' : 'English';
     b.setAttribute('lang', l === 'en' ? 'fr' : 'en');
