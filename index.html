@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="fr">
+<!DOCTYPE html><html lang="fr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -226,6 +225,10 @@
   }
   .op .row { display: flex; flex-wrap: wrap; gap: .6rem; }
   .op .btn { flex: 1 1 10rem; }
+  .op.intl, .op.online { background: #fff; border: 2px solid var(--forest); }
+  .op.intl p, .op.online p { margin: .4rem 0 .6rem; }
+  .istep { margin: 0 0 1rem; padding-left: 1.3rem; }
+  .istep li { margin-bottom: .4rem; }
   .proof { margin-top: 1.5rem; }
 
   footer { background: #082a1f; color: #b9cfc2; padding: 1.5rem 0; font-size: .95rem; }
@@ -488,6 +491,30 @@
         <div class="row">
           <a class="btn btn-dark" href="tel:%23150%23">Ouvrir Orange Money</a>
           <button class="btn btn-ghost copy" type="button" data-num="698431633">Copier le numéro</button>
+        </div>
+      </div>
+
+      <div class="op intl">
+        <h3 data-t-fr="Vous êtes à l'étranger ?" data-t-en="Paying from abroad?">Vous êtes à l'étranger ?</h3>
+        <p data-t-fr="Envoyez l'argent directement sur mon Mobile Money, sans compte à créer chez moi, avec WorldRemit, Remitly ou Xoom (Xoom accepte PayPal). Les frais d'envoi sont indiqués par l'application avant de confirmer." data-t-en="Send the money straight to my Mobile Money, with no account to create on my side, using WorldRemit, Remitly or Xoom (Xoom accepts PayPal). The app shows the sending fees before you confirm.">Envoyez l'argent directement sur mon Mobile Money, sans compte à créer chez moi, avec WorldRemit, Remitly ou Xoom (Xoom accepte PayPal). Les frais d'envoi sont indiqués par l'application avant de confirmer.</p>
+        <ol class="istep">
+          <li data-t-fr="Ouvrez WorldRemit, Remitly ou Xoom, choisissez Cameroun, puis Mobile Money (MTN)." data-t-en="Open WorldRemit, Remitly or Xoom, choose Cameroon, then Mobile Money (MTN).">Ouvrez WorldRemit, Remitly ou Xoom, choisissez Cameroun, puis Mobile Money (MTN).</li>
+          <li data-t-fr="Entrez le numéro MTN ci-dessus et le montant à payer." data-t-en="Enter the MTN number above and the amount to pay.">Entrez le numéro MTN ci-dessus et le montant à payer.</li>
+          <li data-t-fr="Nom du bénéficiaire à saisir : WOUNANG Emmanuel." data-t-en="Recipient name to enter: WOUNANG Emmanuel.">Nom du bénéficiaire à saisir : WOUNANG Emmanuel.</li>
+          <li data-t-fr="Envoyez-moi la preuve sur WhatsApp : je livre votre commande." data-t-en="Send me the proof on WhatsApp: I will deliver your order.">Envoyez-moi la preuve sur WhatsApp : je livre votre commande.</li>
+        </ol>
+      </div>
+
+      <!-- PAIEMENT EN LIGNE (masqué).
+           Quand ton compte Fapshi ou Flutterwave est actif : 1) crée un lien de paiement par produit,
+           2) colle chaque lien à la place de LIEN_A_COLLER dans les boutons ci-dessous,
+           3) retire l'attribut hidden. Copie le bouton <a> pour chaque produit (guide, formation, etc.).
+           Chaque texte a une version française (data-t-fr) et anglaise (data-t-en). -->
+      <div class="op online" id="paiement-en-ligne" hidden>
+        <h3 data-t-fr="Payer en ligne" data-t-en="Pay online">Payer en ligne</h3>
+        <p data-t-fr="Choisissez votre achat et payez en ligne, en toute sécurité." data-t-en="Choose your purchase and pay online, securely.">Choisissez votre achat et payez en ligne, en toute sécurité.</p>
+        <div class="row">
+          <a class="btn btn-dark" href="LIEN_A_COLLER" target="_blank" rel="noopener" data-t-fr="Consultation : 10 000 FCFA" data-t-en="Consultation: 10,000 FCFA">Consultation : 10 000 FCFA</a>
         </div>
       </div>
 
