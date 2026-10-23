@@ -1749,6 +1749,27 @@ window.I18N={
 "pt": "Esta área é assegurada em parceria com um especialista em QHSE.",
 "de": "Dieser Bereich wird in Partnerschaft mit einem QHSE-Spezialisten angeboten.",
 "zh": "本板块与一位 QHSE 专业人士合作提供。"
+},
+"Cours de langues": {
+"en": "Language courses",
+"es": "Cursos de idiomas",
+"pt": "Cursos de línguas",
+"de": "Sprachkurse",
+"zh": "语言课程"
+},
+"Apprenez une langue à votre rythme : cours, exercices et ebooks pratiques, à suivre sur votre téléphone. Anglais, français et autres langues sur demande.": {
+"en": "Learn a language at your own pace: lessons, exercises and practical ebooks, to follow on your phone. English, French and other languages on request.",
+"es": "Aprenda un idioma a su ritmo: clases, ejercicios y ebooks prácticos, para seguir desde su teléfono. Inglés, francés y otros idiomas bajo petición.",
+"pt": "Aprenda uma língua ao seu ritmo: aulas, exercícios e ebooks práticos, para seguir no seu telemóvel. Inglês, francês e outras línguas a pedido.",
+"de": "Lernen Sie eine Sprache in Ihrem Tempo: Kurse, Übungen und praktische E-Books für Ihr Handy. Englisch, Französisch und weitere Sprachen auf Anfrage.",
+"zh": "按自己的节奏学习一门语言：课程、练习和实用电子书，用手机即可学习。可提供英语、法语及其他语言（按需）。"
+},
+"Demander un cours de langue": {
+"en": "Request a language course",
+"es": "Solicitar un curso de idiomas",
+"pt": "Pedir um curso de línguas",
+"de": "Sprachkurs anfragen",
+"zh": "咨询语言课程"
 }
 };
 window.I18N_META={"title": {"en": "Emmanuel Global Business Center | Business Rescue, advice, QHSE and vitality in Yaoundé", "es": "Emmanuel Global Business Center | Business Rescue, asesoría, QHSE y vitalidad en Yaundé", "pt": "Emmanuel Global Business Center | Business Rescue, consultoria, QHSE e vitalidade em Yaoundé", "de": "Emmanuel Global Business Center | Business Rescue, Beratung, QHSE und Vitalität in Yaoundé", "zh": "Emmanuel Global Business Center | 雅温得的企业救援、咨询、QHSE 与活力健康"}, "desc": {"en": "Business Rescue, advice for entrepreneurs, QHSE, health and vitality. WhatsApp consultation, Mobile Money payment. Digital products, Edmark, woodworking machines, land in Yaoundé, video editing and websites.", "es": "Business Rescue, asesoría para emprendedores, QHSE, salud y vitalidad. Consulta por WhatsApp, pago por Mobile Money. Productos digitales, Edmark, máquinas de carpintería, terrenos en Yaundé, edición de vídeo y sitios web.", "pt": "Business Rescue, consultoria para empreendedores, QHSE, saúde e vitalidade. Consulta por WhatsApp, pagamento por Mobile Money. Produtos digitais, Edmark, máquinas de marcenaria, terrenos em Yaoundé, edição de vídeo e sites.", "de": "Business Rescue, Beratung für Unternehmer, QHSE, Gesundheit und Vitalität. Beratung per WhatsApp, Zahlung per Mobile Money. Digitale Produkte, Edmark, Holzbearbeitungsmaschinen, Grundstücke in Yaoundé, Videoschnitt und Websites.", "zh": "企业救援、创业者咨询、QHSE、健康与活力。WhatsApp 咨询，Mobile Money 付款。数字产品、Edmark、木工机械、雅温得土地、视频剪辑与网站建设。"}};
