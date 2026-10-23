@@ -1,14 +1,22 @@
-<!DOCTYPE html><html lang="fr">
+<!DOCTYPE html>
+<html lang="fr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="light">
 <meta name="theme-color" content="#0e3b2c">
+<link rel="icon" href="favicon.png" type="image/png">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://emmanuelglobalbusinesscenter.netlify.app/">
+<meta property="og:image" content="https://emmanuelglobalbusinesscenter.netlify.app/egbc-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://emmanuelglobalbusinesscenter.netlify.app/egbc-og.jpg">
 <meta property="og:title" content="Emmanuel Global Business Center">
-<meta property="og:description" content="Conseil pour entrepreneurs, produits digitaux, guides, formations et modèles. Advice, digital products, guides and training for entrepreneurs.">
-<title>Emmanuel Global Business Center | Conseil pour entrepreneurs en difficulté à Yaoundé</title>
-<meta name="description" content="Conseil et accompagnement pour les entrepreneurs menacés de faillite. Consultation par WhatsApp, paiement par Mobile Money. Produits digitaux, Edmark, machines de menuiserie, terrains à Yaoundé, montage vidéo et sites web.">
+<meta property="og:description" content="Business Rescue, conseil, QHSE, santé et vitalité pour entrepreneurs, à Yaoundé et au-delà.">
+<title>Emmanuel Global Business Center | Business Rescue, conseil, QHSE et vitalité à Yaoundé</title>
+<meta name="description" content="Business Rescue, conseil pour entrepreneurs, QHSE, santé et vitalité. Consultation par WhatsApp, paiement par Mobile Money. Produits digitaux, Edmark, machines de menuiserie, terrains à Yaoundé, montage vidéo et sites web.">
 <style>
   :root {
     color-scheme: light;
@@ -162,6 +170,60 @@
   }
   .more .btn { margin-top: 1.5rem; }
 
+
+  /* Habillage vert et or */
+  :root { --gold: #d4b062; --gold-light: #f1dc9e; }
+  .hero {
+    background:
+      radial-gradient(circle at 12% 0%, rgba(212,176,98,.20), transparent 42%),
+      radial-gradient(circle at 100% 100%, rgba(212,176,98,.14), transparent 45%),
+      linear-gradient(165deg, #06241b 0%, #0e3b2c 58%, #0a3024 100%);
+    border-bottom: 3px solid var(--gold);
+  }
+  .hero-pill { display: inline-block; margin: 0 0 1rem; padding: .3rem .9rem; border: 1.5px solid var(--gold); border-radius: 999px; color: var(--gold-light); font-size: .9rem; font-weight: 600; background: rgba(212,176,98,.10); }
+  .hero .btn-light { background: linear-gradient(135deg, var(--gold-light), var(--gold)); color: #0a2a1f; border-color: transparent; }
+  .hero .btn-outline { border-color: var(--gold); color: #fff; }
+  .trust { list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); gap: .6rem; margin: 0 0 1.5rem; padding: 0; max-width: 30rem; }
+  .trust li { display: flex; flex-direction: column; align-items: center; gap: .5rem; padding: .8rem .4rem; border-radius: 12px; background: rgba(255,255,255,.07); text-align: center; font-size: .88rem; font-weight: 600; line-height: 1.25; color: #fff; }
+  .trust .ico { display: inline-flex; align-items: center; justify-content: center; width: 46px; height: 46px; border-radius: 50%; border: 1.5px solid var(--gold); color: var(--gold-light); }
+  .hero .hero-avail { margin: 1.1rem 0 0; font-size: .95rem; font-weight: 700; color: #fff; }
+  .hero .hero-avail + .hero-foot { margin-top: .35rem; }
+  .hero .hero-foot { margin: 1.25rem 0 0; font-size: .95rem; color: var(--gold-light); }
+  .next { border-top: 3px solid var(--gold); }
+  .esub { margin: 0 0 .6rem; font-weight: 600; color: var(--leaf); }
+
+
+  /* Logo, pôles et nouvelles sections */
+  .lang { color: #fff; }
+  select.lang { appearance: none; -webkit-appearance: none; padding: 0 1rem; font: inherit; font-weight: 700; background: transparent; }
+  select.lang option { color: #16211b; background: #fff; }
+  .hero-logo { display: block; width: 168px; height: auto; margin: 0 0 1rem; padding: 6px; background: #fff; border-radius: 16px; border: 2px solid var(--gold); box-shadow: 0 6px 18px rgba(0,0,0,.35); }
+  .poles { padding: 2.25rem 0 2.5rem; background: #fff; border-bottom: 1px solid var(--line); }
+  .poles .lead { color: var(--muted); }
+  .pgrid { list-style: none; margin: 1.25rem 0 0; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: .75rem; }
+  .pgrid a { display: flex; flex-direction: column; align-items: center; gap: .15rem; height: 100%; padding: 1rem .6rem; text-align: center; text-decoration: none; color: var(--ink); background: var(--paper); border: 1.5px solid var(--line); border-radius: 14px; }
+  .pgrid a:active, .pgrid a:hover { border-color: var(--gold); }
+  .pshield { width: 54px; height: 65px; margin-bottom: .3rem; }
+  .pnum { font-size: .8rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: #8a6a1c; }
+  .pgrid strong { font-family: Georgia, "Times New Roman", serif; font-size: 1.1rem; line-height: 1.2; }
+  .psub { font-size: .85rem; line-height: 1.3; color: var(--muted); }
+  .pole-tag { display: inline-block; margin: 0 0 .6rem; padding: .2rem .8rem; border-radius: 999px; background: var(--forest); color: var(--gold-light); font-size: .85rem; font-weight: 700; letter-spacing: .04em; }
+  .qhse { padding: 2.5rem 0 2.5rem; border-top: 1px solid var(--line); background: #fff; }
+  .qhse .lead { color: var(--muted); }
+  .sante { padding: 2.5rem 0 2.5rem; border-top: 1px solid var(--line); }
+  .sante .lead { color: var(--muted); }
+  .qhse .btn, .sante .btn-wa { margin-top: .75rem; }
+  .qhse .eprice, .sante .eprice { margin: 1rem 0 0; color: var(--forest); font-weight: 700; }
+  .sante .item .note { margin-top: .6rem; }
+  .partner { margin-top: 1rem; padding: 1rem 1.1rem; border: 2px solid var(--gold); border-radius: 12px; background: var(--paper); }
+  .partner h3 { font-size: 1.15rem; margin-bottom: .35rem; }
+  .partner p { margin: 0 0 .3rem; }
+  .vis { margin-top: 2rem; }
+  .vis-title { font-size: 1.3rem; padding-bottom: .35rem; border-bottom: 2px solid var(--gold); margin-bottom: .25rem; }
+  .vis-item { border-top: 0; padding: 1rem 0 .25rem; }
+  .foot { display: flex; align-items: center; gap: 1.1rem; }
+  .seal { flex: none; width: 96px; height: 96px; border-radius: 50%; background: #fff; padding: 3px; }
+
   [hidden] { display: none !important; }
 
   /* Vidéos (format vertical 9:16) */
@@ -171,15 +233,44 @@
     border-radius: 12px; background: #000; object-fit: contain;
   }
   .vid-cap { margin-top: .5rem; font-size: .95rem; color: var(--muted); }
+  .hook { padding: 1.75rem 0 0; }
+  .hook .vid { margin: 0 auto; }
 
   /* Produits Edmark (espace masqué jusqu'à la fin de la formation) */
   .eprods { display: grid; gap: 1rem; margin-top: 1.25rem; }
   .eprod { padding: 1rem; background: #fff; border: 1px solid var(--line); border-radius: 12px; }
-  .eprod-img { aspect-ratio: 4 / 3; border-radius: 10px; background: #e7efe9; margin-bottom: .8rem; }
+  .eprod-photo { display: block; width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--line); }
+  .avail { display: inline-block; margin-bottom: .5rem; padding: .15rem .7rem; border-radius: 999px; background: #d9f2e3; color: #0b4a2c; font-weight: 700; font-size: .9rem; }
   .eprod h4 { font-family: Georgia, "Times New Roman", serif; font-size: 1.15rem; line-height: 1.2; margin: 0 0 .3rem; }
   .eprod p { margin: 0 0 .6rem; }
   .eprod .eprice { color: var(--forest); font-weight: 700; }
   .eprod .btn { display: flex; width: 100%; margin-top: .25rem; }
+  .advice-testi { margin: 1.5rem 0 1.25rem; }
+  .tt-title { font-family: Georgia, "Times New Roman", serif; font-size: 1.25rem; font-weight: 700; margin: 0 0 .25rem; padding-bottom: .35rem; border-bottom: 2px solid var(--gold); }
+  .advice-testi .euse { margin-top: .75rem; }
+  .ecollapse { margin-top: 1rem; border: 2px solid var(--forest); border-radius: 14px; background: #fff; overflow: hidden; }
+  .ecollapse > summary { display: flex; align-items: center; justify-content: space-between; gap: .75rem; padding: 1rem 1.1rem; cursor: pointer; list-style: none; font-weight: 700; font-size: 1.05rem; color: #fff; background: var(--forest); }
+  .ecollapse > summary::-webkit-details-marker { display: none; }
+  .ecollapse > summary::after { content: ""; flex: none; width: .65rem; height: .65rem; border-right: 3px solid var(--gold); border-bottom: 3px solid var(--gold); transform: rotate(45deg); transition: transform .2s; margin-top: -.25rem; }
+  .ecollapse[open] > summary::after { transform: rotate(-135deg); margin-top: .2rem; }
+  .ecollapse .when-open { display: none; }
+  .ecollapse[open] .when-open { display: inline; }
+  .ecollapse[open] .when-closed { display: none; }
+  .ecollapse > *:not(summary) { margin-left: 1rem; margin-right: 1rem; }
+  .ecollapse > summary + * { margin-top: 1rem; }
+  .ecollapse > *:last-child { margin-bottom: 1.25rem; }
+  .ecollapse .eprod-photo { width: calc(100% - 2rem); }
+  .eintro { margin: 1rem 0 .25rem; font-weight: 600; }
+  .echips { display: flex; flex-wrap: wrap; gap: .5rem; margin: .75rem 0 1rem; }
+  .echips a { display: inline-block; padding: .45rem .9rem; border-radius: 999px; background: #fff; border: 1.5px solid var(--forest); color: var(--forest); font-weight: 700; font-size: .95rem; text-decoration: none; }
+  .ecat-block { margin-top: 1.75rem; }
+  .ecat { font-family: Georgia, "Times New Roman", serif; font-size: 1.25rem; margin: 0 0 .25rem; padding-bottom: .35rem; border-bottom: 2px solid var(--leaf); }
+  .eprod-img { display: block; max-width: 100%; height: auto; max-height: 11rem; width: auto; margin: 0 auto .75rem; }
+  .euse { margin: 0 0 .6rem; border: 1px solid var(--line); border-radius: 8px; background: var(--paper); }
+  .euse summary { cursor: pointer; padding: .5rem .75rem; font-weight: 600; color: var(--forest); }
+  .euse p { margin: 0; padding: 0 .75rem .75rem; font-size: .95rem; }
+  .emaker { margin-top: 1.75rem; }
+  .ecat-block .vid, .ecat-block .tcard { margin-top: 1rem; }
 
   /* Témoignages (section masquée tant qu'il n'y a pas de vrais témoignages) */
   .testi { padding: 2.5rem 0 3rem; border-top: 1px solid var(--line); background: #fff; }
@@ -236,22 +327,60 @@
 </style>
 </head>
 <body>
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs><linearGradient id="egG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#14664a"/><stop offset="1" stop-color="#07301f"/></linearGradient><linearGradient id="egY" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f1dc9e"/><stop offset="1" stop-color="#d4b062"/></linearGradient></defs><symbol id="egbc-shield" viewBox="0 0 100 120"><path d="M50 4 L92 18 V58 C92 88 72 106 50 116 C28 106 8 88 8 58 V18 Z" fill="url(#egG)" stroke="url(#egY)" stroke-width="3.5" stroke-linejoin="round"/><path d="M50 11 L86 23 V58 C86 84 69 100 50 109 C31 100 14 84 14 58 V23 Z" fill="none" stroke="#f1dc9e" stroke-opacity=".55" stroke-width="1"/><text x="50" y="42" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-weight="700" font-size="21" fill="url(#egY)" letter-spacing="1">EGBC</text></symbol><symbol id="pole-rescue" viewBox="0 0 100 120"><path d="M50 4 L92 18 V58 C92 88 72 106 50 116 C28 106 8 88 8 58 V18 Z" fill="url(#egG)" stroke="url(#egY)" stroke-width="3.5" stroke-linejoin="round"/><path d="M50 11 L86 23 V58 C86 84 69 100 50 109 C31 100 14 84 14 58 V23 Z" fill="none" stroke="#f1dc9e" stroke-opacity=".55" stroke-width="1"/><text x="50" y="42" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-weight="700" font-size="21" fill="url(#egY)" letter-spacing="1">EGBC</text><g fill="none" stroke="url(#egY)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="50" cy="80" r="15"/><circle cx="50" cy="80" r="6.5"/><path d="M54.6 84.6 L60.6 90.6"/><path d="M45.4 84.6 L39.4 90.6"/><path d="M45.4 75.4 L39.4 69.4"/><path d="M54.6 75.4 L60.6 69.4"/></g></symbol><symbol id="pole-conseil" viewBox="0 0 100 120"><path d="M50 4 L92 18 V58 C92 88 72 106 50 116 C28 106 8 88 8 58 V18 Z" fill="url(#egG)" stroke="url(#egY)" stroke-width="3.5" stroke-linejoin="round"/><path d="M50 11 L86 23 V58 C86 84 69 100 50 109 C31 100 14 84 14 58 V23 Z" fill="none" stroke="#f1dc9e" stroke-opacity=".55" stroke-width="1"/><text x="50" y="42" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-weight="700" font-size="21" fill="url(#egY)" letter-spacing="1">EGBC</text><g fill="none" stroke="url(#egY)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M50 62 a12 12 0 0 1 6.5 22 v5 h-13 v-5 a12 12 0 0 1 6.5 -22 z"/><path d="M44 94 h12 M46 98.500 h8"/><path d="M50 56 v-3 M38.500 61 l-2.200 -2.200 M61.500 61 l2.200 -2.200 M33 72 h-3 M67 72 h3"/></g></symbol><symbol id="pole-qhse" viewBox="0 0 100 120"><path d="M50 4 L92 18 V58 C92 88 72 106 50 116 C28 106 8 88 8 58 V18 Z" fill="url(#egG)" stroke="url(#egY)" stroke-width="3.5" stroke-linejoin="round"/><path d="M50 11 L86 23 V58 C86 84 69 100 50 109 C31 100 14 84 14 58 V23 Z" fill="none" stroke="#f1dc9e" stroke-opacity=".55" stroke-width="1"/><text x="50" y="42" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-weight="700" font-size="21" fill="url(#egY)" letter-spacing="1">EGBC</text><g fill="none" stroke="url(#egY)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M31 88 a19 19 0 0 1 38 0 z"/><path d="M26 88 h48 v4 h-48 z"/><path d="M46 69 h8 v19 h-8 z"/><path d="M50 69 v-3"/></g></symbol><symbol id="pole-sante" viewBox="0 0 100 120"><path d="M50 4 L92 18 V58 C92 88 72 106 50 116 C28 106 8 88 8 58 V18 Z" fill="url(#egG)" stroke="url(#egY)" stroke-width="3.5" stroke-linejoin="round"/><path d="M50 11 L86 23 V58 C86 84 69 100 50 109 C31 100 14 84 14 58 V23 Z" fill="none" stroke="#f1dc9e" stroke-opacity=".55" stroke-width="1"/><text x="50" y="42" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-weight="700" font-size="21" fill="url(#egY)" letter-spacing="1">EGBC</text><g fill="none" stroke="url(#egY)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M50 96 C30 82 28 66 38 62 C44 60 48 63 50 67 C52 63 56 60 62 62 C72 66 70 82 50 96 z"/><path d="M50 70 v10 M45 75 h10"/></g></symbol></svg>
 
 <header class="hero">
   <div class="wrap">
-    <div class="topbar"><a class="lang" id="shareBtn" href="https://wa.me/" target="_blank" rel="noopener">Partager</a><button class="lang" id="langBtn" type="button">English</button></div>
+    <div class="topbar"><a class="lang" id="shareBtn" href="https://wa.me/" target="_blank" rel="noopener">Partager</a><select class="lang" id="langSel" aria-label="Langue / Language"><option value="fr">Français</option><option value="en">English</option><option value="es">Español</option><option value="pt">Português</option><option value="de">Deutsch</option><option value="zh">中文</option></select></div>
+    <img class="hero-logo" src="egbc-logo.jpg" width="168" height="193" alt="Emmanuel Global Business Center : Protection, Stratégie, Relance">
+    <span class="hero-pill" data-t-fr="Accompagnement discret · Yaoundé" data-t-en="Discreet support · Yaoundé">Accompagnement discret · Yaoundé</span>
     <h1>Emmanuel Global Business Center</h1>
-    <p>Conseil et accompagnement pour les entrepreneurs menacés de faillite, à Yaoundé et au-delà. Consultation par WhatsApp, paiement par Mobile Money.</p>
+    <p>Business Rescue, conseil, QHSE et vitalité : l'accompagnement complet de l'entrepreneur, à Yaoundé et au-delà. Consultation par WhatsApp, paiement par Mobile Money.</p>
+    <ul class="trust">
+      <li><span class="ico"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.4-4.2A8 8 0 1 1 8.2 18.6L4 20z"/><path d="M9 11.5c.6 1.6 2 3 3.6 3.6l1.3-1.3 2 .9v1.2c-.2.9-1 1.4-1.9 1.3-3.4-.4-6.200-3.200-6.600-6.600-.1-.9.4-1.700 1.300-1.900h1.200l.9 2z"/></svg></span><span class="tt" data-t-fr="Consultation WhatsApp" data-t-en="WhatsApp consultation">Consultation WhatsApp</span></li>
+      <li><span class="ico"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="6" width="19" height="12" rx="2"/><circle cx="12" cy="12" r="2.6"/><path d="M6 9.5v.01M18 14.5v.01"/></svg></span><span class="tt" data-t-fr="Paiement Mobile Money" data-t-en="Mobile Money payment">Paiement Mobile Money</span></li>
+      <li><span class="ico"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 5-3.200 8.200-7 10-3.800-1.800-7-5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></span><span class="tt" data-t-fr="Discret et confidentiel" data-t-en="Discreet and confidential">Discret et confidentiel</span></li>
+    </ul>
     <div class="actions">
       <a class="btn btn-light" href="#conseil">Découvrir l'accompagnement</a>
       <a class="btn btn-outline" href="https://wa.me/237677635069?text=Bonjour%20Emmanuel%2C%20je%20souhaite%20une%20consultation.">Écrire sur WhatsApp</a>
     </div>
+    <p class="hero-avail" data-t-fr="Disponible 7j/7 · Réponse sous 24 h" data-t-en="Available 7 days a week · Reply within 24 hours">Disponible 7j/7 · Réponse sous 24 h</p>
+    <p class="hero-foot" data-t-fr="Écoute et solution personnalisée, adaptées à votre situation." data-t-en="Attentive listening and a solution tailored to your situation.">Écoute et solution personnalisée, adaptées à votre situation.</p>
   </div>
 </header>
 
 <main>
+  <section class="poles" id="poles">
+    <div class="wrap">
+      <h2>Quatre pôles, une seule exigence</h2>
+      <p class="lead">Protéger votre entreprise et prendre soin de vous : quatre pôles qui se complètent.</p>
+      <ul class="pgrid">
+      <li><a href="#conseil"><svg class="pshield" viewBox="0 0 100 120" aria-hidden="true"><use href="#pole-rescue"/></svg><span class="pnum">Pôle 1</span><strong>Business Rescue</strong><span class="psub">Sauvetage et reprise d'activité</span></a></li>
+      <li><a href="#produits-digitaux"><svg class="pshield" viewBox="0 0 100 120" aria-hidden="true"><use href="#pole-conseil"/></svg><span class="pnum">Pôle 2</span><strong>Conseil Entrepreneurs</strong><span class="psub">Accompagnement et stratégie</span></a></li>
+      <li><a href="#qhse"><svg class="pshield" viewBox="0 0 100 120" aria-hidden="true"><use href="#pole-qhse"/></svg><span class="pnum">Pôle 3</span><strong>QHSE</strong><span class="psub">Qualité · Hygiène · Sécurité · Environnement</span></a></li>
+      <li><a href="#sante"><svg class="pshield" viewBox="0 0 100 120" aria-hidden="true"><use href="#pole-sante"/></svg><span class="pnum">Pôle 4</span><strong>Santé et vitalité</strong><span class="psub">Bien-être · Forme · Self-défense</span></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ESPACE VIDÉO D'ACCROCHE (masqué, vide pour l'instant).
+       Quand la vidéo est prête : déposer le fichier "accroche.mp4" (et "accroche-poster.jpg" si tu veux une image de départ)
+       sur GitHub, puis retirer l'attribut hidden de la ligne <section ... id="accroche">. -->
+  <section class="hook" id="accroche" hidden>
+    <div class="wrap">
+      <figure class="vid">
+        <video controls playsinline preload="none" aria-label="Vidéo de présentation">
+          <source src="accroche.mp4" type="video/mp4">
+        </video>
+        <figcaption class="vid-cap" data-t-fr="Entrepreneurs, j'ai créé ce site pour vous" data-t-en="Entrepreneurs, I created this site for you">Entrepreneurs, j'ai créé ce site pour vous</figcaption>
+      </figure>
+    </div>
+  </section>
+
   <section class="advice" id="conseil">
     <div class="wrap">
+      <p class="pole-tag">Pôle 1 · Business Rescue</p>
       <h2>Conseil et accompagnement pour entrepreneurs en difficulté</h2>
       <p class="lead">Votre entreprise est menacée de faillite ? Vous n'avez pas à affronter cela seul.</p>
       <p>Je vous aide à voir clairement où en est votre activité, à comprendre ce qui la met en danger et à décider quoi faire en priorité pour la redresser.</p>
@@ -276,6 +405,21 @@
       </ul>
 
       <p class="closing">Chaque entreprise est différente. Je vous donne un avis honnête et un plan concret, adapté à votre situation.</p>
+
+      <!-- TÉMOIGNAGE CLIENT (vidéo + texte) -->
+      <div class="advice-testi" id="temoignage-conseil">
+        <p class="tt-title" data-t-fr="Témoignage d’un client" data-t-en="A client’s testimonial">Témoignage d’un client</p>
+        <figure class="vid">
+          <video controls playsinline preload="none" poster="temoignage-bilieu-poster.jpg" aria-label="Vidéo : témoignage d’un client, Ets Bilieu &amp; Fils">
+            <source src="temoignage-bilieu.mp4" type="video/mp4">
+          </video>
+          <figcaption class="vid-cap" data-t-fr="Bilieu, Ets Bilieu &amp; Fils" data-t-en="Bilieu, Ets Bilieu &amp; Fils">Bilieu, Ets Bilieu &amp; Fils</figcaption>
+        </figure>
+        <details class="euse">
+          <summary data-t-fr="Lire le témoignage" data-t-en="Read the testimonial">Lire le témoignage</summary>
+          <p data-t-fr="Je suis Bilieu, des Ets Bilieu &amp; Fils. Je tiens à témoigner de la qualité exceptionnelle de l’accompagnement de mon manager, à travers Emmanuel Global Business. J’ai personnellement bénéficié de son assistance, de ses précieux conseils et surtout de son expertise en matière de stratégie. Sa capacité à analyser les situations, à orienter et à proposer des solutions adaptées est tout simplement remarquable. Avec lui, on ne bénéficie pas seulement de conseils, on bénéficie d’une véritable vision stratégique et d’un accompagnement de qualité. Ce témoignage est ma façon de lui exprimer ma profonde reconnaissance pour son soutien et son professionnalisme. Si vous recherchez un accompagnement sérieux et stratégique, je vous invite à découvrir Emmanuel Global Business." data-t-en="I am Bilieu, from Ets Bilieu &amp; Fils. I would like to testify to the exceptional quality of the support I received from my manager, through Emmanuel Global Business. I personally benefited from his assistance, his valuable advice and above all his strategic expertise. His ability to analyse situations, give direction and propose suitable solutions is simply remarkable. With him, you don’t just get advice, you get a true strategic vision and quality support. This testimonial is my way of expressing my deep gratitude for his support and professionalism. If you are looking for serious, strategic support, I invite you to discover Emmanuel Global Business.">Je suis Bilieu, des Ets Bilieu &amp; Fils. Je tiens à témoigner de la qualité exceptionnelle de l’accompagnement de mon manager, à travers Emmanuel Global Business. J’ai personnellement bénéficié de son assistance, de ses précieux conseils et surtout de son expertise en matière de stratégie. Sa capacité à analyser les situations, à orienter et à proposer des solutions adaptées est tout simplement remarquable. Avec lui, on ne bénéficie pas seulement de conseils, on bénéficie d’une véritable vision stratégique et d’un accompagnement de qualité. Ce témoignage est ma façon de lui exprimer ma profonde reconnaissance pour son soutien et son professionnalisme. Si vous recherchez un accompagnement sérieux et stratégique, je vous invite à découvrir Emmanuel Global Business.</p>
+        </details>
+      </div>
 
       <p class="price"><strong>10 000 FCFA</strong> <span>pour 1 heure de consultation</span></p>
 
@@ -325,6 +469,7 @@
 
   <section class="digital" id="produits-digitaux">
     <div class="wrap">
+      <p class="pole-tag">Pôle 2 · Conseil Entrepreneurs</p>
       <h2>Produits digitaux</h2>
       <p class="lead">Des ressources pratiques, livrées par WhatsApp et payables par Mobile Money, pour lancer ou faire grandir votre activité à votre rythme. Disponibles en français et en anglais.</p>
 
@@ -374,39 +519,324 @@
         <a class="btn btn-wa" href="https://wa.me/237677635069?text=Bonjour%20Emmanuel%2C%20je%20voudrais%20un%20service%20num%C3%A9rique.">Demander un devis</a>
       </div>
 
+
+      <div class="vis">
+        <h3 class="vis-title">Visibilité de votre entreprise</h3>
+      <div class="item vis-item">
+        <h3>Montage de vidéos publicitaires</h3>
+        <p>Montage de vidéos publicitaires pour promouvoir votre entreprise, vos produits ou vos services sur les réseaux sociaux et ailleurs.</p>
+      </div>
+
+      <div class="item vis-item">
+        <h3>Création de sites web à prix accessibles</h3>
+        <p>Création de sites web à des prix accessibles, pensés pour faire connaître votre activité sans vous ruiner.</p>
+      </div>
+
+      </div>
       <p class="note">Après paiement par Mobile Money (voir en bas de page), envoyez-moi la preuve sur WhatsApp : je vous livre votre produit rapidement.</p>
+    </div>
+  </section>
+
+  <section class="qhse" id="qhse">
+    <div class="wrap">
+      <p class="pole-tag">Pôle 3 · QHSE</p>
+      <h2>QHSE : qualité, hygiène, sécurité, environnement</h2>
+      <p class="lead">Mettez votre entreprise en conformité avec les bonnes pratiques, et protégez vos équipes, vos clients et votre activité.</p>
+      <ul class="points">
+        <li><strong>Qualité</strong><span>Des méthodes claires et un travail régulier, pour des produits et des services fiables.</span></li>
+        <li><strong>Hygiène</strong><span>Des règles d'hygiène adaptées à votre activité, du local au personnel.</span></li>
+        <li><strong>Sécurité</strong><span>La prévention des accidents et des risques sur votre lieu de travail.</span></li>
+        <li><strong>Environnement</strong><span>La gestion de vos déchets et de votre impact sur l'environnement.</span></li>
+      </ul>
+      <p class="note">Ce pôle est assuré en partenariat avec un spécialiste QHSE.</p>
+
+      <div class="partner" id="partenaire-qhse">
+        <h3>Votre expert QHSE</h3>
+        <p><strong>Wilfried Landry BESSACK BABENA</strong></p>
+      </div>
+
+      <p class="eprice">Tarif : sur devis</p>
+      <a class="btn btn-wa" href="https://wa.me/237677635069?text=Bonjour%20Emmanuel%2C%20je%20voudrais%20parler%20de%20mon%20besoin%20QHSE%20%28qualit%C3%A9%2C%20hygi%C3%A8ne%2C%20s%C3%A9curit%C3%A9%2C%20environnement%29.">Parler de mon besoin QHSE</a>
+    </div>
+  </section>
+
+  <section class="sante" id="sante">
+    <div class="wrap">
+      <p class="pole-tag">Pôle 4 · Santé et vitalité</p>
+      <h2>Prendre soin du dirigeant</h2>
+      <p class="lead">Une entreprise a besoin d'un dirigeant en forme. Trois façons de prendre soin de vous.</p>
+
+      <div class="item pole-edmark" id="edmark">
+        <h3>Bien-être et hygiène de vie (produits Edmark)</h3>
+        <p class="esub" data-t-fr="En marge du conseil, pour accompagner votre équilibre personnel." data-t-en="Alongside consulting, to support your personal balance.">En marge du conseil, pour accompagner votre équilibre personnel.</p>
+        <span class="soon" hidden>Bientôt disponible</span>
+        <span class="avail" data-t-fr="Disponible maintenant" data-t-en="Available now">Disponible maintenant</span>
+        <p>Je propose des produits Edmark pour accompagner votre hygiène de vie au quotidien : Splina, Cocolagen, Chekop, et d'autres références de la gamme.</p>
+        <p class="note">Ces produits accompagnent une bonne hygiène de vie ; pour toute question de santé particulière, demandez toujours l'avis d'un professionnel de santé.</p>
+
+        <details class="ecollapse" id="edmark-details">
+          <summary>
+            <span class="when-closed" data-t-fr="Voir tous les produits Edmark (11)" data-t-en="See all Edmark products (11)">Voir tous les produits Edmark (11)</span>
+            <span class="when-open" data-t-fr="Masquer les produits Edmark" data-t-en="Hide Edmark products">Masquer les produits Edmark</span>
+          </summary>
+        <img class="eprod-photo" src="edmark-produits.jpg" width="576" height="250" loading="lazy" alt="Produits Edmark : Red Yeast Coffee, Edmark Café et Café 73">
+
+        <!-- VIDÉO PROMO EDMARK (offre du 23 octobre). Elle se cache toute seule à partir du 24 octobre 2026. -->
+        <figure class="vid" id="promo-edmark">
+          <video controls playsinline preload="none" poster="pub-edmark-poster.jpg" aria-label="Vidéo : Spécial Kit Café Anniversaire Edmark">
+            <source src="pub-edmark.mp4" type="video/mp4">
+          </video>
+          <figcaption class="vid-cap" data-t-fr="Offre spéciale Kit Café Anniversaire : uniquement le vendredi 23 octobre" data-t-en="Special Anniversary Coffee Kit offer: Friday 23 October only">Offre spéciale Kit Café Anniversaire : uniquement le vendredi 23 octobre</figcaption>
+        </figure>
+
+        <p class="eintro" data-t-fr="Choisissez un produit, puis écrivez-moi sur WhatsApp pour connaître le prix et commander." data-t-en="Pick a product, then message me on WhatsApp to get the price and order.">Choisissez un produit, puis écrivez-moi sur WhatsApp pour connaître le prix et commander.</p>
+        <nav class="echips" aria-label="Catégories Edmark">
+          <a href="#edmark-cafes" data-t-fr="Cafés et thés" data-t-en="Coffees and teas">Cafés et thés</a>
+          <a href="#edmark-boissons" data-t-fr="Boissons nutritionnelles" data-t-en="Nutrition drinks">Boissons nutritionnelles</a>
+          <a href="#edmark-beaute" data-t-fr="Beauté et vitalité" data-t-en="Beauty and vitality">Beauté et vitalité</a>
+        </nav>
+        <p class="note" data-t-fr="Ce sont des compléments alimentaires : ils ne remplacent ni une alimentation variée, ni un traitement médical." data-t-en="These are food supplements: they do not replace a varied diet or medical treatment.">Ce sont des compléments alimentaires : ils ne remplacent ni une alimentation variée, ni un traitement médical.</p>
+
+        <div class="ecat-block" id="edmark-cafes">
+          <h4 class="ecat" data-t-fr="Cafés et thés" data-t-en="Coffees and teas">Cafés et thés</h4>
+          <div class="eprods">
+          <article class="eprod">
+            <img class="eprod-img" src="edmark-ginseng.jpg" width="179" height="225" loading="lazy" alt="Edmark Café Ginseng Coffee">
+            <h4 data-t-fr="Edmark Café (Ginseng Coffee)" data-t-en="Edmark Café (Ginseng Coffee)">Edmark Café (Ginseng Coffee)</h4>
+            <p data-t-fr="Café arabica décaféiné de Colombie, avec extrait de ginseng d&#x27;Asie." data-t-en="Decaffeinated Colombian arabica coffee with Asian ginseng extract.">Café arabica décaféiné de Colombie, avec extrait de ginseng d&#x27;Asie.</p>
+            <details class="euse">
+              <summary data-t-fr="Conditionnement et préparation" data-t-en="Packaging and preparation">Conditionnement et préparation</summary>
+              <p data-t-fr="Boîte de 20 sachets de 18 g. Ingrédients : café arabica, poudre de ginseng, saccharose. Verser un sachet dans une tasse, ajouter de l&#x27;eau chaude, bien remuer." data-t-en="Box of 20 sachets of 18 g. Ingredients: arabica coffee, ginseng powder, sucrose. Pour one sachet into a cup, add hot water and stir well.">Boîte de 20 sachets de 18 g. Ingrédients : café arabica, poudre de ginseng, saccharose. Verser un sachet dans une tasse, ajouter de l&#x27;eau chaude, bien remuer.</p>
+            </details>
+            <p class="eprice" data-t-fr="Prix : sur demande" data-t-en="Price: on request">Prix : sur demande</p>
+            <a class="btn btn-wa" href="https://wa.me/237677635069?text=Bonjour%20Emmanuel%2C%20je%20voudrais%20commander%20un%20produit%20Edmark%20%3A%20Edmark%20Caf%C3%A9%20%28Ginseng%20Coffee%29." data-t-fr="Commander Edmark Café (Ginseng Coffee)" data-t-en="Order Edmark Café (Ginseng Coffee)">Commander Edmark Café (Ginseng Coffee)</a>
+          </article>
+          <article class="eprod">
+            <img class="eprod-img" src="edmark-redyeast.jpg" width="296" height="226" loading="lazy" alt="Red Yeast Coffee Edmark">
+            <h4 data-t-fr="Red Yeast Coffee" data-t-en="Red Yeast Coffee">Red Yeast Coffee</h4>
+            <p data-t-fr="Café décaféiné à la levure de riz rouge." data-t-en="Decaffeinated coffee with red yeast rice.">Café décaféiné à la levure de riz rouge.</p>
+            <details class="euse">
+              <summary data-t-fr="Conditionnement et préparation" data-t-en="Packaging and preparation">Conditionnement et préparation</summary>
+              <p data-t-fr="Boîte de 20 sachets de 20 g. Verser un sachet dans une tasse, ajouter de l&#x27;eau chaude, bien remuer." data-t-en="Box of 20 sachets of 20 g. Pour one sachet into a cup, add hot water and stir well.">Boîte de 20 sachets de 20 g. Verser un sachet dans une tasse, ajouter de l&#x27;eau chaude, bien remuer.</p>
+            </details>
+            <p class="eprice" data-t-fr="Prix : sur demande" data-t-en="Price: on request">Prix : sur demande</p>
+            <a class="btn btn-wa" href="https://wa.me/237677635069?text=Bonjour%20Emmanuel%2C%20je%20voudrais%20commander%20un%20produit%20Edmark%20%3A%20Red%20Yeast%20Coffee." data-t-fr="Commander Red Yeast Coffee" data-t-en="Order Red Yeast Coffee">Commander Red Yeast Coffee</a>
+          </article>
+          <article class="eprod">
+            <h4 data-t-fr="Café 73" data-t-en="Café 73">Café 73</h4>
+            <p data-t-fr="Café instantané de la gamme Edmark." data-t-en="Instant coffee from the Edmark range.">Café instantané de la gamme Edmark.</p>
+            <p class="eprice" data-t-fr="Prix : sur demande" data-t-en="Price: on request">Prix : sur demande</p>
+            <a class="btn btn-wa" href="https://wa.me/237677635069?text=Bonjour%20Emmanuel%2C%20je%20voudrais%20commander%20un%20produit%20Edmark%20%3A%20Caf%C3%A9%2073." data-t-fr="Commander Café 73" data-t-en="Order Café 73">Commander Café 73</a>
+          </article>
+          <article class="eprod">
+            <img class="eprod-img" src="edmark-redbubble.jpg" width="294" height="271" loading="lazy" alt="Red Bubble Tea Edmark">
+            <h4 data-t-fr="Red Bubble Tea" data-t-en="Red Bubble Tea">Red Bubble Tea</h4>
+            <p data-t-fr="Thé (Camellia sinensis) mélangé à de la levure de riz rouge." data-t-en="Tea (Camellia sinensis) blended with red yeast rice.">Thé (Camellia sinensis) mélangé à de la levure de riz rouge.</p>
+            <details class="euse">
+              <summary data-t-fr="Conditionnement et préparation" data-t-en="Packaging and preparation">Conditionnement et préparation</summary>
+              <p data-t-fr="Boîte de 16 sachets de 30 g. Verser un sachet dans une tasse, ajouter 140 ml d&#x27;eau chaude, bien remuer." data-t-en="Box of 16 sachets of 30 g. Pour one sachet into a cup, add 140 ml of hot water and stir well.">Boîte de 16 sachets de 30 g. Verser un sachet dans une tasse, ajouter 140 ml d&#x27;eau chaude, bien remuer.</p>
+            </details>
+            <p class="eprice" data-t-fr="Prix : sur demande" data-t-en="Price: on request">Prix : sur demande</p>
+            <a class="btn btn-wa" href="https://wa.me/237677635069?text=Bonjour%20Emmanuel%2C%20je%20voudrais%20commander%20un%20produit%20Edmark%20%3A%20Red%20Bubble%20Tea." data-t-fr="Commander Red Bubble Tea" data-t-en="Order Red Bubble Tea">Commander Red Bubble Tea</a>
+          </article>
+          </div>
+        </div>
+
+        <div class="ecat-block" id="edmark-boissons">
+          <h4 class="ecat" data-t-fr="Boissons nutritionnelles" data-t-en="Nutrition drinks">Boissons nutritionnelles</h4>
+          <div class="eprods">
+          <article class="eprod">
+            <img class="eprod-img" src="edmark-shakeoff.jpg" width="377" height="243" loading="lazy" alt="Shake Off Phyto Fiber Edmark">
+            <h4 data-t-fr="Shake Off Phyto Fiber" data-t-en="Shake Off Phyto Fiber">Shake Off Phyto Fiber</h4>
+            <p data-t-fr="Boisson aux fibres de plantes, avoine, baie de roselle, garcinia cambogia et inuline." data-t-en="Drink with plant fibres, oats, roselle berry, garcinia cambogia and inulin.">Boisson aux fibres de plantes, avoine, baie de roselle, garcinia cambogia et inuline.</p>
+            <details class="euse">
+              <summary data-t-fr="Conditionnement et préparation" data-t-en="Packaging and preparation">Conditionnement et préparation</summary>
+              <p data-t-fr="Boîte de 12 sachets de 20 g. Verser un sachet dans un shaker, ajouter 250 ml d&#x27;eau froide, secouer 5 secondes et boire aussitôt, puis boire au moins 500 ml d&#x27;eau." data-t-en="Box of 12 sachets of 20 g. Pour one sachet into a shaker, add 250 ml of cold water, shake for 5 seconds and drink right away, then drink at least 500 ml of water.">Boîte de 12 sachets de 20 g. Verser un sachet dans un shaker, ajouter 250 ml d&#x27;eau froide, secouer 5 secondes et boire aussitôt, puis boire au moins 500 ml d&#x27;eau.</p>
+            </details>
+            <p class="eprice" data-t-fr="Prix : sur demande" data-t-en="Price: on request">Prix : sur demande</p>
+            <a class="btn btn-wa" href="https://wa.me/237677635069?text=Bonjour%20Emmanuel%2C%20je%20voudrais%20commander%20un%20produit%20Edmark%20%3A%20Shake%20Off%20Phyto%20Fiber." data-t-fr="Commander Shake Off Phyto Fiber" data-t-en="Order Shake Off Phyto Fiber">Commander Shake Off Phyto Fiber</a>
+          </article>
+          <article class="eprod">
+            <img class="eprod-img" src="edmark-mrt.jpg" width="351" height="223" loading="lazy" alt="MRT Complex Edmark">
+            <h4 data-t-fr="MRT Complex" data-t-en="MRT Complex">MRT Complex</h4>
+            <p data-t-fr="Boisson nutritionnelle de substitut de repas, faible en calories (83 kcal par sachet)." data-t-en="Low-calorie meal replacement drink (83 kcal per sachet).">Boisson nutritionnelle de substitut de repas, faible en calories (83 kcal par sachet).</p>
+            <details class="euse">
+              <summary data-t-fr="Conditionnement et préparation" data-t-en="Packaging and preparation">Conditionnement et préparation</summary>
+              <p data-t-fr="Boîte de 28 sachets de 20 g. Verser un sachet dans un verre avec 350 ml d&#x27;eau froide, bien remuer et boire. Pensez à bien vous hydrater dans la journée." data-t-en="Box of 28 sachets of 20 g. Mix one sachet in a glass with 350 ml of cold water, stir well and drink. Remember to drink plenty of water during the day.">Boîte de 28 sachets de 20 g. Verser un sachet dans un verre avec 350 ml d&#x27;eau froide, bien remuer et boire. Pensez à bien vous hydrater dans la journée.</p>
+            </details>
+            <p class="eprice" data-t-fr="Prix : sur demande" data-t-en="Price: on request">Prix : sur demande</p>
+            <a class="btn btn-wa" href="https://wa.me/237677635069?text=Bonjour%20Emmanuel%2C%20je%20voudrais%20commander%20un%20produit%20Edmark%20%3A%20MRT%20Complex." data-t-fr="Commander MRT Complex" data-t-en="Order MRT Complex">Commander MRT Complex</a>
+          </article>
+          <article class="eprod">
+            <img class="eprod-img" src="edmark-spiro.jpg" width="324" height="188" loading="lazy" alt="SpiRO Edmark">
+            <h4 data-t-fr="SpiRO" data-t-en="SpiRO">SpiRO</h4>
+            <p data-t-fr="Boisson à la spiruline, au son de riz et au son d&#x27;avoine." data-t-en="Drink made with spirulina, rice bran and oat bran.">Boisson à la spiruline, au son de riz et au son d&#x27;avoine.</p>
+            <details class="euse">
+              <summary data-t-fr="Conditionnement et préparation" data-t-en="Packaging and preparation">Conditionnement et préparation</summary>
+              <p data-t-fr="Boîte de 16 sachets de 30 g. Verser un sachet dans un verre, ajouter 180 ml d&#x27;eau chaude, bien remuer et boire." data-t-en="Box of 16 sachets of 30 g. Pour one sachet into a glass, add 180 ml of hot water, stir well and drink.">Boîte de 16 sachets de 30 g. Verser un sachet dans un verre, ajouter 180 ml d&#x27;eau chaude, bien remuer et boire.</p>
+            </details>
+            <p class="eprice" data-t-fr="Prix : sur demande" data-t-en="Price: on request">Prix : sur demande</p>
+            <a class="btn btn-wa" href="https://wa.me/237677635069?text=Bonjour%20Emmanuel%2C%20je%20voudrais%20commander%20un%20produit%20Edmark%20%3A%20SpiRO." data-t-fr="Commander SpiRO" data-t-en="Order SpiRO">Commander SpiRO</a>
+          </article>
+          <article class="eprod">
+            <img class="eprod-img" src="edmark-bubblec.jpg" width="265" height="196" loading="lazy" alt="Bubble C Edmark">
+            <h4 data-t-fr="Bubble C" data-t-en="Bubble C">Bubble C</h4>
+            <p data-t-fr="Boisson instantanée à l&#x27;orange, avec vitamine C et calcium." data-t-en="Instant orange drink with vitamin C and calcium.">Boisson instantanée à l&#x27;orange, avec vitamine C et calcium.</p>
+            <details class="euse">
+              <summary data-t-fr="Conditionnement et préparation" data-t-en="Packaging and preparation">Conditionnement et préparation</summary>
+              <p data-t-fr="Boîte de 20 sachets de 18 g. Verser un sachet dans un verre, ajouter 150 ml d&#x27;eau fraîche, attendre 1 à 2 minutes, puis mélanger à la cuillère." data-t-en="Box of 20 sachets of 18 g. Pour one sachet into a glass, add 150 ml of cold water, wait 1 to 2 minutes, then stir with a spoon.">Boîte de 20 sachets de 18 g. Verser un sachet dans un verre, ajouter 150 ml d&#x27;eau fraîche, attendre 1 à 2 minutes, puis mélanger à la cuillère.</p>
+            </details>
+            <p class="eprice" data-t-fr="Prix : sur demande" data-t-en="Price: on request">Prix : sur demande</p>
+            <a class="btn btn-wa" href="https://wa.me/237677635069?text=Bonjour%20Emmanuel%2C%20je%20voudrais%20commander%20un%20produit%20Edmark%20%3A%20Bubble%20C." data-t-fr="Commander Bubble C" data-t-en="Order Bubble C">Commander Bubble C</a>
+          </article>
+          <article class="eprod">
+            <img class="eprod-img" src="edmark-splina.jpg" width="273" height="200" loading="lazy" alt="Splina Liquid Chlorophyll Edmark">
+            <h4 data-t-fr="Splina Liquid Chlorophyll" data-t-en="Splina Liquid Chlorophyll">Splina Liquid Chlorophyll</h4>
+            <p data-t-fr="Chlorophylle liquide extraite de Morus alba (mûrier blanc), avec vitamines et minéraux." data-t-en="Liquid chlorophyll extracted from Morus alba (white mulberry), with vitamins and minerals.">Chlorophylle liquide extraite de Morus alba (mûrier blanc), avec vitamines et minéraux.</p>
+            <details class="euse">
+              <summary data-t-fr="Conditionnement et préparation" data-t-en="Packaging and preparation">Conditionnement et préparation</summary>
+              <p data-t-fr="Bouteille de 500 ml. Verser une cuillère à soupe (15 ml) dans 250 ml d&#x27;eau fraîche, avec le bouchon doseur fourni." data-t-en="500 ml bottle. Pour one tablespoon (15 ml) into 250 ml of cold water, using the measuring cap provided.">Bouteille de 500 ml. Verser une cuillère à soupe (15 ml) dans 250 ml d&#x27;eau fraîche, avec le bouchon doseur fourni.</p>
+            </details>
+            <p class="eprice" data-t-fr="Prix : sur demande" data-t-en="Price: on request">Prix : sur demande</p>
+            <a class="btn btn-wa" href="https://wa.me/237677635069?text=Bonjour%20Emmanuel%2C%20je%20voudrais%20commander%20un%20produit%20Edmark%20%3A%20Splina%20Liquid%20Chlorophyll." data-t-fr="Commander Splina Liquid Chlorophyll" data-t-en="Order Splina Liquid Chlorophyll">Commander Splina Liquid Chlorophyll</a>
+          </article>
+          </div>
+        </div>
+
+        <div class="ecat-block" id="edmark-beaute">
+          <h4 class="ecat" data-t-fr="Beauté et vitalité" data-t-en="Beauty and vitality">Beauté et vitalité</h4>
+          <div class="eprods">
+          <article class="eprod">
+            <img class="eprod-img" src="edmark-cocollagen.jpg" width="355" height="210" loading="lazy" alt="Cocollagen Edmark">
+            <h4 data-t-fr="Cocollagen" data-t-en="Cocollagen">Cocollagen</h4>
+            <p data-t-fr="Boisson chocolatée enrichie en collagène marin." data-t-en="Chocolate drink enriched with marine collagen.">Boisson chocolatée enrichie en collagène marin.</p>
+            <details class="euse">
+              <summary data-t-fr="Conditionnement et préparation" data-t-en="Packaging and preparation">Conditionnement et préparation</summary>
+              <p data-t-fr="Boîte de 20 sachets de 30 g. Verser un sachet dans une tasse, ajouter 180 ml d&#x27;eau chaude, bien remuer et boire." data-t-en="Box of 20 sachets of 30 g. Pour one sachet into a cup, add 180 ml of hot water, stir well and drink.">Boîte de 20 sachets de 30 g. Verser un sachet dans une tasse, ajouter 180 ml d&#x27;eau chaude, bien remuer et boire.</p>
+            </details>
+            <p class="eprice" data-t-fr="Prix : sur demande" data-t-en="Price: on request">Prix : sur demande</p>
+            <a class="btn btn-wa" href="https://wa.me/237677635069?text=Bonjour%20Emmanuel%2C%20je%20voudrais%20commander%20un%20produit%20Edmark%20%3A%20Cocollagen." data-t-fr="Commander Cocollagen" data-t-en="Order Cocollagen">Commander Cocollagen</a>
+          </article>
+          <article class="eprod">
+            <img class="eprod-img" src="edmark-bioelixir.jpg" width="280" height="245" loading="lazy" alt="Bio-Elixir Edmark">
+            <h4 data-t-fr="Bio-Elixir" data-t-en="Bio-Elixir">Bio-Elixir</h4>
+            <p data-t-fr="Boisson à base de soja, protéines de lactosérum et acides aminés." data-t-en="Drink made with soy, whey protein and amino acids.">Boisson à base de soja, protéines de lactosérum et acides aminés.</p>
+            <details class="euse">
+              <summary data-t-fr="Conditionnement et préparation" data-t-en="Packaging and preparation">Conditionnement et préparation</summary>
+              <p data-t-fr="Boîte de 10 sachets de 30 g. Verser un sachet dans un verre, ajouter de l&#x27;eau tiède, remuer et boire le soir avant d&#x27;aller au lit." data-t-en="Box of 10 sachets of 30 g. Pour one sachet into a glass, add warm water, stir and drink in the evening before going to bed.">Boîte de 10 sachets de 30 g. Verser un sachet dans un verre, ajouter de l&#x27;eau tiède, remuer et boire le soir avant d&#x27;aller au lit.</p>
+            </details>
+            <p class="eprice" data-t-fr="Prix : sur demande" data-t-en="Price: on request">Prix : sur demande</p>
+            <a class="btn btn-wa" href="https://wa.me/237677635069?text=Bonjour%20Emmanuel%2C%20je%20voudrais%20commander%20un%20produit%20Edmark%20%3A%20Bio-Elixir." data-t-fr="Commander Bio-Elixir" data-t-en="Order Bio-Elixir">Commander Bio-Elixir</a>
+          </article>
+          </div>
+        </div>
+
+        <div class="emaker">
+          <h4 class="ecat" data-t-fr="À propos du fabricant" data-t-en="About the manufacturer">À propos du fabricant</h4>
+          <p data-t-fr="Les produits Edmark sont fabriqués par Edmark Industries Sdn Bhd (Malaisie). D&#x27;après la documentation du fabricant, l&#x27;usine est certifiée ISO 22000, GMP (Codex Alimentarius), HACCP et Halal (JAKIM)." data-t-en="Edmark products are made by Edmark Industries Sdn Bhd (Malaysia). According to the manufacturer&#x27;s documentation, the factory is certified ISO 22000, GMP (Codex Alimentarius), HACCP and Halal (JAKIM).">Les produits Edmark sont fabriqués par Edmark Industries Sdn Bhd (Malaisie). D&#x27;après la documentation du fabricant, l&#x27;usine est certifiée ISO 22000, GMP (Codex Alimentarius), HACCP et Halal (JAKIM).</p>
+        </div>
+
+        <!-- ============ ESPACES RÉSERVÉS (cachés) ============
+             Chaque bloc ci-dessous est caché (attribut hidden). Pour l'afficher : retirer le mot « hidden » sur sa ligne.
+             - #edmark-avenir      : produits annoncés « à venir » par Edmark (savon, dentifrice). À afficher quand ils arrivent.
+             - #edmark-nouveautes  : modèle vide pour un nouveau produit (copier/modifier le bloc <article>).
+             - #edmark-videos      : vidéo de présentation / démonstration (déposer edmark-video-1.mp4 sur GitHub).
+             - #edmark-temoignages : vidéos et texte de témoignages clients Edmark (déposer edmark-temoignage-1.mp4, -2.mp4). -->
+        <div class="ecat-block" id="edmark-avenir" hidden>
+          <h4 class="ecat" data-t-fr="Bientôt disponible" data-t-en="Coming soon">Bientôt disponible</h4>
+          <div class="eprods">
+          <article class="eprod">
+            <h4 data-t-fr="Savon Splina" data-t-en="Splina Soap">Savon Splina</h4>
+            <p class="eprice" data-t-fr="Bientôt disponible." data-t-en="Coming soon.">Bientôt disponible.</p>
+            <a class="btn btn-wa" href="https://wa.me/237677635069?text=Bonjour%20Emmanuel%2C%20pr%C3%A9venez-moi%20quand%20ce%20produit%20Edmark%20sera%20disponible%20%3A%20Savon%20Splina." data-t-fr="Me prévenir à l'arrivée" data-t-en="Notify me when available">Me prévenir à l'arrivée</a>
+          </article>
+          <article class="eprod">
+            <h4 data-t-fr="Pâte dentifrice Splina" data-t-en="Splina Toothpaste">Pâte dentifrice Splina</h4>
+            <p class="eprice" data-t-fr="Bientôt disponible." data-t-en="Coming soon.">Bientôt disponible.</p>
+            <a class="btn btn-wa" href="https://wa.me/237677635069?text=Bonjour%20Emmanuel%2C%20pr%C3%A9venez-moi%20quand%20ce%20produit%20Edmark%20sera%20disponible%20%3A%20P%C3%A2te%20dentifrice%20Splina." data-t-fr="Me prévenir à l'arrivée" data-t-en="Notify me when available">Me prévenir à l'arrivée</a>
+          </article>
+          </div>
+        </div>
+
+        <div class="ecat-block" id="edmark-nouveautes" hidden>
+          <h4 class="ecat" data-t-fr="Nouveautés" data-t-en="New arrivals">Nouveautés</h4>
+          <div class="eprods">
+          <article class="eprod">
+            <h4 data-t-fr="Nom du produit" data-t-en="Product name">Nom du produit</h4>
+            <p data-t-fr="Description courte du produit." data-t-en="Short product description.">Description courte du produit.</p>
+            <p class="eprice" data-t-fr="Prix : sur demande" data-t-en="Price: on request">Prix : sur demande</p>
+            <a class="btn btn-wa" href="https://wa.me/237677635069?text=Bonjour%20Emmanuel%2C%20je%20voudrais%20commander%20un%20produit%20Edmark." data-t-fr="Commander" data-t-en="Order">Commander</a>
+          </article>
+          <article class="eprod">
+            <h4 data-t-fr="Nom du produit" data-t-en="Product name">Nom du produit</h4>
+            <p data-t-fr="Description courte du produit." data-t-en="Short product description.">Description courte du produit.</p>
+            <p class="eprice" data-t-fr="Prix : sur demande" data-t-en="Price: on request">Prix : sur demande</p>
+            <a class="btn btn-wa" href="https://wa.me/237677635069?text=Bonjour%20Emmanuel%2C%20je%20voudrais%20commander%20un%20produit%20Edmark." data-t-fr="Commander" data-t-en="Order">Commander</a>
+          </article>
+          </div>
+        </div>
+
+        <div class="ecat-block" id="edmark-videos" hidden>
+          <h4 class="ecat" data-t-fr="Les produits en vidéo" data-t-en="Products on video">Les produits en vidéo</h4>
+          <figure class="vid">
+            <video controls playsinline preload="none" aria-label="Vidéo : produits Edmark">
+              <source src="edmark-video-1.mp4" type="video/mp4">
+            </video>
+            <figcaption class="vid-cap" data-t-fr="Découvrez les produits Edmark en vidéo" data-t-en="Discover Edmark products on video">Découvrez les produits Edmark en vidéo</figcaption>
+          </figure>
+        </div>
+
+        <div class="ecat-block" id="edmark-temoignages" hidden>
+          <h4 class="ecat" data-t-fr="Témoignages de clients Edmark" data-t-en="Edmark customer testimonials">Témoignages de clients Edmark</h4>
+          <figure class="vid">
+            <video controls playsinline preload="none" aria-label="Vidéo : témoignage client Edmark">
+              <source src="edmark-temoignage-1.mp4" type="video/mp4">
+            </video>
+            <figcaption class="vid-cap" data-t-fr="Témoignage client n° 1" data-t-en="Customer testimonial no. 1">Témoignage client n° 1</figcaption>
+          </figure>
+          <figure class="vid">
+            <video controls playsinline preload="none" aria-label="Vidéo : témoignage client Edmark">
+              <source src="edmark-temoignage-2.mp4" type="video/mp4">
+            </video>
+            <figcaption class="vid-cap" data-t-fr="Témoignage client n° 2" data-t-en="Customer testimonial no. 2">Témoignage client n° 2</figcaption>
+          </figure>
+          <figure class="tcard">
+            <blockquote data-t-fr="« Texte du témoignage du client. »" data-t-en="“Customer testimonial text.”">« Texte du témoignage du client. »</blockquote>
+            <figcaption>
+              <strong data-t-fr="Nom du client" data-t-en="Client name">Nom du client</strong>
+              <span data-t-fr="Ville" data-t-en="City">Ville</span>
+            </figcaption>
+          </figure>
+        </div>
+        </details>
+      </div>
+
+      <div class="item">
+        <h3>Remise en forme et performance physique</h3>
+        <p>Coaching de remise en forme, énergie au travail et préparation physique, pensés pour les dirigeants et les personnes actives.</p>
+        <p class="note">Séances adaptées à votre condition physique. En cas de doute sur votre santé, demandez l'avis d'un médecin avant de commencer.</p>
+        <p class="eprice">Tarif : sur demande</p>
+        <a class="btn btn-wa" href="https://wa.me/237677635069?text=Bonjour%20Emmanuel%2C%20je%20suis%20int%C3%A9ress%C3%A9%28e%29%20par%20la%20remise%20en%20forme%20et%20la%20performance%20physique.">Me renseigner sur la remise en forme</a>
+      </div>
+
+      <div class="item">
+        <h3>Self-défense et confiance en soi</h3>
+        <p>Self-défense, gestion du stress, sécurité personnelle et résilience, pour avancer avec assurance.</p>
+        <p class="note">Séances adaptées à votre condition physique. En cas de doute sur votre santé, demandez l'avis d'un médecin avant de commencer.</p>
+        <p class="eprice">Tarif : sur demande</p>
+        <a class="btn btn-wa" href="https://wa.me/237677635069?text=Bonjour%20Emmanuel%2C%20je%20suis%20int%C3%A9ress%C3%A9%28e%29%20par%20la%20self-d%C3%A9fense%20et%20la%20confiance%20en%20soi.">Me renseigner sur la self-défense</a>
+      </div>
     </div>
   </section>
 
   <section class="more">
     <div class="wrap">
-      <h2>Mes autres activités</h2>
-      <p class="lead">Plusieurs domaines, une même exigence. En marge du conseil, j'accompagne aussi mes clients sur d'autres besoins concrets à Yaoundé et au-delà.</p>
+      <h2>Services complémentaires</h2>
+      <p class="lead">Deux autres activités, pour équiper votre atelier et pour acheter un terrain à Yaoundé.</p>
+
 
       <div class="item">
-        <h3>Produits de bien-être Edmark</h3>
-        <span class="soon">Bientôt disponible</span>
-        <p>Je propose des produits Edmark pour accompagner votre hygiène de vie au quotidien : Splina, Cocolagen, Chekop, et d'autres références de la gamme.</p>
-        <p class="note">Ces produits accompagnent une bonne hygiène de vie ; pour toute question de santé particulière, demandez toujours l'avis d'un professionnel de santé.</p>
-
-        <!-- ESPACE PRODUITS EDMARK (masqué).
-             Quand la formation Edmark est terminée : 1) retirer l'attribut hidden ci-dessous,
-             2) retirer le badge « Bientôt disponible » plus haut, 3) remplir une fiche par produit
-             (photo, nom, courte description, prix). Copier le bloc <article> pour chaque produit.
-             Chaque texte a une version française (data-t-fr) et anglaise (data-t-en). -->
-        <div class="eprods" id="edmark-produits" hidden>
-          <article class="eprod">
-            <div class="eprod-img" role="img" aria-label="Photo du produit"></div>
-            <h4 data-t-fr="Nom du produit" data-t-en="Product name">Nom du produit</h4>
-            <p data-t-fr="Courte description du produit." data-t-en="Short product description.">Courte description du produit.</p>
-            <p class="eprice" data-t-fr="Prix : à définir" data-t-en="Price: to be set">Prix : à définir</p>
-            <a class="btn btn-wa" href="https://wa.me/237677635069?text=Bonjour%20Emmanuel%2C%20je%20voudrais%20commander%20un%20produit%20Edmark." data-t-fr="Commander sur WhatsApp" data-t-en="Order on WhatsApp">Commander sur WhatsApp</a>
-          </article>
-        </div>
-      </div>
-
-      <div class="item">
-        <h3>Machines et outils de menuiserie</h3>
+        <h3>Menuiserie : machines et outils</h3>
         <p>Vente de machines de menuiserie bois d'occasion et de leurs divers outils de coupe, pour équiper ou renforcer votre atelier à moindre coût.</p>
         <!-- Pour ajouter une autre vidéo : copier le bloc <figure> ci-dessous, déposer le fichier dans le dossier "videos" et changer les noms. -->
         <figure class="vid">
@@ -418,18 +848,8 @@
       </div>
 
       <div class="item">
-        <h3>Accompagnement achat de terrain à Yaoundé</h3>
+        <h3>Accompagnement pour l'achat d'un terrain à Yaoundé</h3>
         <p>Je vous accompagne dans les démarches d'acquisition d'une parcelle de terrain à Yaoundé, en toute sécurité, du premier contact jusqu'à la finalisation.</p>
-      </div>
-
-      <div class="item">
-        <h3>Montage de vidéos publicitaires</h3>
-        <p>Montage de vidéos publicitaires pour promouvoir votre entreprise, vos produits ou vos services sur les réseaux sociaux et ailleurs.</p>
-      </div>
-
-      <div class="item">
-        <h3>Création de sites web moins chers</h3>
-        <p>Création de sites web à des prix accessibles, pensés pour faire connaître votre activité sans vous ruiner.</p>
       </div>
 
       <a class="btn btn-wa" href="https://wa.me/237677635069?text=Bonjour%20Emmanuel%2C%20je%20voudrais%20discuter%20de%20mon%20besoin.">Discuter de mon besoin sur WhatsApp</a>
@@ -451,6 +871,14 @@
           <strong data-t-fr="Nom du client" data-t-en="Client name">Nom du client</strong>
           <span data-t-fr="Activité, ville" data-t-en="Business, city">Activité, ville</span>
         </figcaption>
+      </figure>
+      <!-- ESPACE VIDÉO TÉMOIGNAGE (masqué). Déposer "temoignage.mp4" sur GitHub puis retirer hidden ci-dessous
+           (et retirer aussi hidden de la section #temoignages). Copier le bloc <figure> pour d'autres vidéos. -->
+      <figure class="vid" id="temoignage-video" hidden>
+        <video controls playsinline preload="none" aria-label="Vidéo : témoignage client">
+          <source src="temoignage.mp4" type="video/mp4">
+        </video>
+        <figcaption class="vid-cap" data-t-fr="Témoignage d'un client" data-t-en="A client's testimonial">Témoignage d'un client</figcaption>
       </figure>
       <a class="btn btn-wa" href="https://wa.me/237677635069?text=Bonjour%20Emmanuel%2C%20je%20voudrais%20partager%20mon%20t%C3%A9moignage." data-t-fr="Partager mon témoignage" data-t-en="Share my testimonial">Partager mon témoignage</a>
     </div>
@@ -526,34 +954,29 @@
 </main>
 
 <footer>
-  <div class="wrap">
-    <strong>Emmanuel Global Business Center</strong>
-    +237 677 635 069
+  <div class="wrap foot">
+    <img class="seal" src="egbc-sceau.png" width="96" height="96" loading="lazy" alt="Sceau Emmanuel Global Business Center, Yaoundé, Cameroun">
+    <div>
+      <strong>Emmanuel Global Business Center</strong>
+      Yaoundé, Cameroun<br>
+      +237 677 635 069<br>
+      emmanuelwounang@gmail.com
+    </div>
   </div>
 </footer>
 
+<script src="langues.js"></script>
 <script>
   document.querySelectorAll('.copy').forEach(function (btn) {
     btn.addEventListener('click', function () {
       var original = btn.firstChild.nodeValue;
-      function done() {
-        btn.firstChild.nodeValue = T('Numéro copié', 'Number copied'); setTimeout(function () { btn.firstChild.nodeValue = original; }, 2000); return;
-        setTimeout(function () { btn.textContent = original; }, 2000);
-      }
-      function fail() {
-        btn.firstChild.nodeValue = T('Copie impossible', 'Copy failed'); setTimeout(function () { btn.firstChild.nodeValue = original; }, 2000); return;
-        setTimeout(function () { btn.textContent = original; }, 2000);
-      }
+      function flash(msg) { btn.firstChild.nodeValue = msg; setTimeout(function () { btn.firstChild.nodeValue = original; }, 2000); }
       try {
-        navigator.clipboard.writeText(btn.getAttribute('data-num')).then(done, fail);
-      } catch (e) {
-        fail();
-      }
+        navigator.clipboard.writeText(btn.getAttribute('data-num')).then(function () { flash(T('Numéro copié')); }, function () { flash(T('Copie impossible')); });
+      } catch (e) { flash(T('Copie impossible')); }
     });
   });
-  function wa(msg) {
-    return "https://wa.me/237677635069?text=" + encodeURIComponent(msg);
-  }
+  function wa(msg) { return "https://wa.me/237677635069?text=" + encodeURIComponent(msg); }
   function show(box, title, text, linkText, linkHref) {
     box.textContent = "";
     var s = document.createElement("strong"); s.textContent = title;
@@ -568,17 +991,17 @@
     var n = document.querySelectorAll("#diag input:checked").length;
     var title, text;
     if (n <= 2) {
-      title = T(n + " signal(s) sur 8 : alerte légère", n + " of 8 signals: mild alert");
-      text = T("Votre entreprise tient, mais agissez maintenant : c’est le meilleur moment pour corriger sans stress.", "Your business is holding up, but act now: it is the best time to fix things without stress.");
+      title = T("{n} signal(s) sur 8 : alerte légère", { n: n });
+      text = T("Votre entreprise tient, mais agissez maintenant : c’est le meilleur moment pour corriger sans stress.");
     } else if (n <= 5) {
-      title = T(n + " signaux sur 8 : situation sérieuse", n + " of 8 signals: serious situation");
-      text = T("C’est très réparable si vous agissez dans les prochaines semaines. Un plan clair fait toute la différence.", "This is very fixable if you act within the next few weeks. A clear plan makes all the difference.");
+      title = T("{n} signaux sur 8 : situation sérieuse", { n: n });
+      text = T("C’est très réparable si vous agissez dans les prochaines semaines. Un plan clair fait toute la différence.");
     } else {
-      title = T(n + " signaux sur 8 : urgence", n + " of 8 signals: urgent");
-      text = T("Il faut agir cette semaine. Vous n’êtes pas seul : parlons de votre situation sans attendre.", "You need to act this week. You are not alone: let’s talk about your situation without delay.");
+      title = T("{n} signaux sur 8 : urgence", { n: n });
+      text = T("Il faut agir cette semaine. Vous n’êtes pas seul : parlons de votre situation sans attendre.");
     }
-    show(document.getElementById("diagOut"), title, text, T("Parler de mon résultat sur WhatsApp", "Talk about my result on WhatsApp"),
-      wa(T("Bonjour Emmanuel, j’ai fait le test sur votre site : " + n + " signaux sur 8. J’aimerais en parler.", "Hello Emmanuel, I took the test on your website: " + n + " of 8 signals. I would like to talk about it.")));
+    show(document.getElementById("diagOut"), title, text, T("Parler de mon résultat sur WhatsApp"),
+      wa(WAM("Bonjour Emmanuel, j’ai fait le test sur votre site : {n} signaux sur 8. J’aimerais en parler.", { n: n })));
   });
 
   document.getElementById("calcBtn").addEventListener("click", function () {
@@ -587,137 +1010,111 @@
     var autres = parseFloat(document.getElementById("cAutres").value) || 0;
     var out = document.getElementById("calcOut");
     if (!(prix > 0)) {
-      show(out, T("Entrez un prix de vente", "Enter a selling price"), T("Indiquez au moins le prix auquel vous vendez l’article.", "Enter at least the price at which you sell the item."), T("Besoin d’aide ? Écrire sur WhatsApp", "Need help? Write on WhatsApp"), wa(T("Bonjour Emmanuel, j’ai besoin d’aide pour calculer ma marge.", "Hello Emmanuel, I need help calculating my margin.")));
+      show(out, T("Entrez un prix de vente"), T("Indiquez au moins le prix auquel vous vendez l’article."), T("Besoin d’aide ? Écrire sur WhatsApp"), wa(WAM("Bonjour Emmanuel, j’ai besoin d’aide pour calculer ma marge.")));
       return;
     }
     var cout = achat + autres;
     var marge = prix - cout;
     var pct = Math.round(marge / prix * 100);
     var minimum = Math.ceil(cout / 0.7 / 100) * 100;
-    var fmt = function (x) { return Math.round(x).toLocaleString(window.LANG === "en" ? "en-US" : "fr-FR") + " FCFA"; };
-    var verdict = marge < 0 ? T("Vous vendez à perte", "You are selling at a loss") : pct < 15 ? T("Marge fragile", "Fragile margin") : pct < 30 ? T("Marge correcte", "Decent margin") : T("Bonne marge", "Good margin");
+    var fmt = function (x) { return Math.round(x).toLocaleString(window.LOCALES[window.LANG] || "fr-FR") + " FCFA"; };
+    var verdict = marge < 0 ? T("Vous vendez à perte") : pct < 15 ? T("Marge fragile") : pct < 30 ? T("Marge correcte") : T("Bonne marge");
     show(out, verdict + " : " + pct + " %",
-      T("Il vous reste " + fmt(marge) + " par article. Pour viser 30 % de marge, vendez à environ " + fmt(minimum) + ".", "You keep " + fmt(marge) + " per item. To aim for a 30% margin, sell at around " + fmt(minimum) + "."),
-      T("Revoir mes prix avec Emmanuel", "Review my prices with Emmanuel"),
-      wa(T("Bonjour Emmanuel, mon calculateur indique une marge de " + pct + " %. J’aimerais revoir mes prix.", "Hello Emmanuel, your calculator shows a margin of " + pct + "%. I would like to review my prices.")));
+      T("Il vous reste {m} par article. Pour viser 30 % de marge, vendez à environ {p}.", { m: fmt(marge), p: fmt(minimum) }),
+      T("Revoir mes prix avec Emmanuel"),
+      wa(WAM("Bonjour Emmanuel, mon calculateur indique une marge de {pct} %. J’aimerais revoir mes prix.", { pct: pct })));
   });
 </script>
 
 <script>
 (function () {
-  var EN = [0,
-  'Advice and support for business owners facing bankruptcy, in Yaoundé and beyond. Consultation via WhatsApp, payment by Mobile Money.',
-  'Discover the support','Write on WhatsApp',
-  'Advice and support for business owners in difficulty',
-  'Is your business at risk of bankruptcy? You don’t have to face this alone.',
-  'I help you see clearly where your business stands, understand what is putting it at risk and decide what to do first to turn it around.',
-  'Your financial situation','Cash flow, debts, expenses and sales: we take stock without sugarcoating.',
-  'The causes of your difficulties','What costs too much, what no longer pays, what is holding your business back.',
-  'Priority actions','What to do first, and what can wait.',
-  'A recovery plan','A realistic plan, adapted to your business and your means.',
-  'Every business is different. I give you an honest opinion and a concrete plan, tailored to your situation.',
-  0,'for a 1-hour consultation','Book my consultation','Ask my question on WhatsApp',
-  'Free test: where does your business stand?','Tick what applies to you. Instant result, no sign-up.',
-  'I don’t know how much money I really have this month','I pay my suppliers late','I mix business money with my own','My best customers are buying less','I sell, but almost nothing is left at the end of the month','I borrow to repay another debt','I avoid opening my account book','My business keeps me awake at night',
-  'See my result','Calculator: are you selling at a loss?',
-  'Many entrepreneurs sell without knowing their real margin. Enter your figures for a single item.',
-  'Selling price (FCFA)','Purchase or production cost (FCFA)','Other costs per item: transport, packaging, marketing (FCFA)','Calculate my margin',
-  'Digital products','Practical resources, delivered via WhatsApp and payable by Mobile Money, to launch or grow your business at your own pace. Available in French and English.',
-  'New','Guide: Saving your business from bankruptcy',
-  '8 chapters, a 90-day recovery plan and a concrete action at the end of each step. Delivered as a PDF on WhatsApp after payment.',
-  '5,000 FCFA','complete guide, readable on your phone','Buy the guide','Ask a question',
-  'Training and coaching','New: the Marketing and Sales Training for 10,000 FCFA.',
-  '6 modules with exercises, a 30-day launch plan and a graded quiz. Other topics: e-commerce, freelancing, languages and entrepreneurship.',
-  'From 5,000 FCFA','Request a training',
-  'Templates and tools','New: the Excel Management Pack for 3,000 FCFA.',
-  'Sales and expenses journal, automatic monthly report, debts and receivables, margin per product and a 90-day recovery plan.',
-  'New: the Business Plan Template for 5,000 FCFA',
-  ', delivered with its 12-month Excel financial forecast. Other templates: CVs, contracts and Canva visuals.',
-  'From 2,000 FCFA','Get a template',
-  'Ebooks and guides','Short guides focused on one specific problem, to read on your phone, even with a slow connection.','From 2,000 FCFA','Get a guide',
-  'Paid communities','Join a private WhatsApp or Telegram group: exclusive content, advice, mutual help and follow-up among entrepreneurs.','From 3,000 FCFA','Join the community',
-  'Packaged digital services','Turnkey offers at a fixed price: full management of your pages (regular posts, visuals, replies to messages, results tracking), plus logos and visuals for social media.','Page management: from 30,000 FCFA / month','Request a quote',
-  'After paying by Mobile Money (see the bottom of the page), send me the proof on WhatsApp: I will deliver your product quickly.',
-  'My other activities','Several fields, one standard. Alongside consulting, I also support my clients with other concrete needs in Yaoundé and beyond.',
-  'Edmark wellness products','Coming soon',
-  'I offer Edmark products to support your daily healthy lifestyle: Splina, Cocolagen, Chekop and other items from the range.',
-  'These products support a healthy lifestyle; for any specific health question, always ask a healthcare professional.',
-  'Woodworking machines and tools','Sale of used woodworking machines and their various cutting tools, to equip or strengthen your workshop at a lower cost.',
-  'Land purchase support in Yaoundé','I support you through the process of acquiring a plot of land in Yaoundé, safely, from first contact to completion.',
-  'Advertising video editing','Advertising video editing to promote your business, products or services on social media and beyond.',
-  'Affordable website creation','Website creation at accessible prices, designed to make your business known without breaking the bank.',
-  'Discuss my need on WhatsApp','Next step','I put all my experience at the service of your success.',
-  'Write to me directly on WhatsApp. We talk about your situation and move forward together toward your goal.','Talk to Emmanuel now',
-  'Pay for your consultation or product','Have you made your choice? Here is how to pay by Mobile Money.',
-  'Choose your operator below and open its menu.','Choose “Transfer money”.',
-  'Enter the matching number and the amount (10,000 FCFA for a consultation, or the price of your product), then confirm.',
-  'Send me the proof on WhatsApp to confirm your order.',
-  0,0,'Open MTN MoMo','Copy the number',0,0,'Open Orange Money','Copy the number',
-  'I have paid, send the proof',0,0];
+  var D = window.I18N || {}, MT = window.I18N_META || {};
+  var LOCALES = { fr: 'fr-FR', en: 'en-US', es: 'es-ES', pt: 'pt-PT', de: 'de-DE', zh: 'zh-CN' };
+  var HTMLLANG = { fr: 'fr', en: 'en', es: 'es', pt: 'pt', de: 'de', zh: 'zh-CN' };
+  var NAMES = { fr: 'Français', en: 'English', es: 'Español', pt: 'Português', de: 'Deutsch', zh: '中文' };
+  var GREET = {
+    en: 'Hello Emmanuel, I am writing from your website about:',
+    es: 'Hola Emmanuel, le escribo desde su sitio web sobre:',
+    pt: 'Olá Emmanuel, escrevo a partir do seu site sobre:',
+    de: 'Hallo Emmanuel, ich schreibe Ihnen über Ihre Website zum Thema:',
+    zh: '你好 Emmanuel，我从您的网站联系您，想咨询：' };
+  var PROOF = {
+    en: 'Hello Emmanuel, I have paid. Here is the proof of payment.',
+    es: 'Hola Emmanuel, he pagado. Aquí está el comprobante de pago.',
+    pt: 'Olá Emmanuel, já paguei. Aqui está o comprovativo de pagamento.',
+    de: 'Hallo Emmanuel, ich habe bezahlt. Hier ist der Zahlungsnachweis.',
+    zh: '你好 Emmanuel，我已付款。这是付款凭证。' };
+  var PH = { en: 'e.g.', es: 'p. ej.', pt: 'ex.', de: 'z. B.', zh: '例如' };
+  window.LOCALES = LOCALES;
+  function tr(fr, l) { if (l === 'fr') return fr; var d = D[fr]; return (d && (d[l] || d.en)) || fr; }
+  function fill(str, vars) { if (vars) for (var k in vars) str = str.split('{' + k + '}').join(vars[k]); return str; }
+  window.T = function (fr, vars) { return fill(tr(fr, window.LANG || 'fr'), vars); };
+  window.WAM = function (fr, vars) {
+    var l = window.LANG || 'fr', m = fill(tr(fr, l), vars);
+    return (l === 'fr' || l === 'en') ? m : m + '\n(FR) ' + fill(fr, vars);
+  };
+
   var nodes = [], orig = [], w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null), n;
   while ((n = w.nextNode())) {
-    if (!n.nodeValue.trim() || n.parentNode.closest('script,style,#langBtn,#shareBtn,.vid,[data-t-en]')) continue;
+    if (!n.nodeValue.trim() || n.parentNode.closest('script,style,select,#shareBtn,.vid,[data-t-en]')) continue;
     nodes.push(n); orig.push(n.nodeValue);
   }
+  var dtEls = [].slice.call(document.querySelectorAll('[data-t-en]'));
   var meta = document.querySelector('meta[name=description]');
   var metaFr = meta.getAttribute('content'), titleFr = document.title;
-  var metaEn = 'Advice and support for business owners facing bankruptcy. Consultation via WhatsApp, payment by Mobile Money. Digital products, Edmark, woodworking machines, land in Yaoundé, video editing and websites.';
-  var titleEn = 'Emmanuel Global Business Center | Advice for struggling entrepreneurs in Yaoundé';
   var waEls = [].slice.call(document.querySelectorAll('a[href^="https://wa.me/"]')).filter(function (a) { return !a.closest('.out') && a.id !== 'shareBtn'; });
-  waEls.forEach(function (a) { a.setAttribute('data-fr', a.getAttribute('href')); });
+  waEls.forEach(function (a) { a.setAttribute('data-fr', a.getAttribute('href')); a.setAttribute('data-lbl', a.textContent.trim()); });
   var phs = [].slice.call(document.querySelectorAll('input[placeholder]'));
   phs.forEach(function (p) { p.setAttribute('data-fr', p.getAttribute('placeholder')); });
+  var sel = document.getElementById('langSel');
+
   function setLang(l) {
-    window.LANG = l; document.documentElement.lang = l;
+    if (!LOCALES[l]) l = 'fr';
+    window.LANG = l; document.documentElement.lang = HTMLLANG[l];
     nodes.forEach(function (nd, i) {
-      var o = orig[i];
-      if (l === 'en' && EN[i]) {
-        var t = o.trim(), p = o.indexOf(t);
-        nd.nodeValue = o.slice(0, p) + EN[i] + o.slice(p + t.length);
-      } else { nd.nodeValue = o; }
+      var o = orig[i], t = o.trim(), p = o.indexOf(t);
+      nd.nodeValue = l === 'fr' ? o : o.slice(0, p) + tr(t, l) + o.slice(p + t.length);
     });
-    /* Textes ajoutés après coup (légendes, témoignages, Edmark) : traduits par leurs attributs data-t-fr / data-t-en */
-    [].forEach.call(document.querySelectorAll('[data-t-en]'), function (e) { e.textContent = e.getAttribute(l === 'en' ? 'data-t-en' : 'data-t-fr'); });
-    document.title = l === 'en' ? titleEn : titleFr;
-    meta.setAttribute('content', l === 'en' ? metaEn : metaFr);
+    dtEls.forEach(function (e) {
+      var fr = e.getAttribute('data-t-fr'), d = D[fr], en = e.getAttribute('data-t-en');
+      e.textContent = l === 'fr' ? fr : ((d && d[l]) || (l === 'en' ? en : (d && d.en) || en));
+    });
+    document.title = l === 'fr' ? titleFr : ((MT.title && (MT.title[l] || MT.title.en)) || titleFr);
+    meta.setAttribute('content', l === 'fr' ? metaFr : ((MT.desc && (MT.desc[l] || MT.desc.en)) || metaFr));
     waEls.forEach(function (a) {
       var fr = a.getAttribute('data-fr');
-      if (l !== 'en') { a.setAttribute('href', fr); return; }
-      var msg = a.closest('.proof') ? 'Hello Emmanuel, I have paid. Here is the proof of payment.' : 'Hello Emmanuel, I am writing from your website about: ' + a.textContent.trim();
+      if (l === 'fr') { a.setAttribute('href', fr); return; }
+      var msg = a.closest('.proof') ? PROOF[l] + (l === 'en' ? '' : '\n(FR) J’ai payé. Voici la preuve de paiement.')
+        : GREET[l] + ' ' + a.textContent.trim() + (l === 'en' ? '' : ' (' + a.getAttribute('data-lbl') + ')');
       a.setAttribute('href', 'https://wa.me/237677635069?text=' + encodeURIComponent(msg));
     });
-    phs.forEach(function (p) { var fr = p.getAttribute('data-fr'); p.setAttribute('placeholder', l === 'en' ? fr.replace('ex.', 'e.g.') : fr); });
-    [].forEach.call(document.querySelectorAll('.out'), function (o) { o.hidden = true; });    document.getElementById('shareBtn').firstChild.nodeValue = l === 'en' ? 'Share' : 'Partager';
-    var b = document.getElementById('langBtn');
-    b.firstChild.nodeValue = l === 'en' ? 'Français' : 'English';
-    b.setAttribute('lang', l === 'en' ? 'fr' : 'en');
+    phs.forEach(function (p) { var fr = p.getAttribute('data-fr'); p.setAttribute('placeholder', l === 'fr' ? fr : fr.replace('ex.', PH[l] || 'e.g.')); });
+    [].forEach.call(document.querySelectorAll('.out'), function (o) { o.hidden = true; });
+    document.getElementById('shareBtn').firstChild.nodeValue = tr('Partager', l);
+    sel.value = l;
     try { localStorage.setItem('lang', l); } catch (e) {}
     updateShare();
   }
-  window.T = function (fr, en) { return window.LANG === 'en' ? en : fr; };
-  var nav = (navigator.language || '').slice(0, 2) === 'en' ? 'en' : 'fr', start = nav;
-  try { start = localStorage.getItem('lang') || nav; } catch (e) {}
-  document.getElementById('langBtn').addEventListener('click', function () { setLang(window.LANG === 'en' ? 'fr' : 'en'); });
-  document.getElementById('shareBtn').addEventListener('click', function () { updateShare(); return;
-    var url = location.href.split('#')[0];
-    var text = T('Emmanuel Global Business Center : conseil, guides, formations et modèles pour entrepreneurs.', 'Emmanuel Global Business Center: advice, guides, training and templates for entrepreneurs.');
-    function viaWhatsApp() { window.open('https://wa.me/?text=' + encodeURIComponent(text + ' ' + url), '_blank', 'noopener'); }
-    if (navigator.share) {
-      navigator.share({ title: document.title, text: text, url: url }).catch(function (err) {
-        if (!err || err.name !== 'AbortError') viaWhatsApp();
-      });
-    } else { viaWhatsApp(); }
-  });
   function updateShare() {
     var a = document.getElementById('shareBtn');
-    var url = /claude|anthropic|usercontent|artifact/i.test(location.hostname) ? 'https://claude.ai/artifact/XiVGTECSC3je5dD6yGebTM' : location.href.split('#')[0];
-    var text = T('Emmanuel Global Business Center : conseil, guides, formations et modèles pour entrepreneurs.', 'Emmanuel Global Business Center: advice, guides, training and templates for entrepreneurs.');
+    var url = location.href.split('#')[0];
+    var text = T('Emmanuel Global Business Center : conseil, QHSE, vitalité, guides et formations pour entrepreneurs.');
     a.href = 'https://wa.me/?text=' + encodeURIComponent(text + ' ' + url);
   }
-  updateShare();
   window.LANG = 'fr';
-  if (start === 'en') setLang('en');
+  updateShare();
+  if (!window.I18N) { sel.hidden = true; }
+  else {
+    var nav = (navigator.language || '').slice(0, 2), start = LOCALES[nav] ? nav : 'fr';
+    try { start = localStorage.getItem('lang') || start; } catch (e) {}
+    sel.addEventListener('change', function () { setLang(sel.value); });
+    if (start !== 'fr') setLang(start);
+  }
 })();
+</script>
+<script>
+/* Cache la vidéo promo Edmark à partir du 24 octobre 2026 (heure du Cameroun) */
+(function(){var f=document.getElementById('promo-edmark');if(f&&Date.now()>=Date.parse('2026-10-24T00:00:00+01:00'))f.hidden=true;})();
 </script>
 </body>
 </html>
