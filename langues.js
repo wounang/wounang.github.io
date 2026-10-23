@@ -301,13 +301,6 @@ window.I18N={
 "de": "Mein Ergebnis anzeigen",
 "zh": "查看结果"
 },
-"Calculateur : vendez-vous à perte ?": {
-"en": "Calculator: are you selling at a loss?",
-"es": "Calculadora: ¿vende usted con pérdida?",
-"pt": "Calculadora: está a vender com prejuízo?",
-"de": "Rechner: Verkaufen Sie mit Verlust?",
-"zh": "计算器：您是不是在亏本销售？"
-},
 "Beaucoup d’entrepreneurs vendent sans connaître leur vraie marge. Entrez vos chiffres pour un seul article.": {
 "en": "Many entrepreneurs sell without knowing their real margin. Enter your figures for a single item.",
 "es": "Muchos emprendedores venden sin conocer su margen real. Introduzca sus cifras para un solo artículo.",
@@ -1770,6 +1763,20 @@ window.I18N={
 "pt": "Pedir um curso de línguas",
 "de": "Sprachkurs anfragen",
 "zh": "咨询语言课程"
+},
+"Calculateur : faites-vous vraiment du profit ?": {
+"en": "Calculator: are you really making a profit?",
+"es": "Calculadora: ¿realmente obtiene beneficios?",
+"pt": "Calculadora: está mesmo a ter lucro?",
+"de": "Rechner: Machen Sie wirklich Gewinn?",
+"zh": "计算器：您真的在盈利吗？"
+},
+"Visiteurs du site :": {
+"en": "Site visitors:",
+"es": "Visitantes del sitio:",
+"pt": "Visitantes do site:",
+"de": "Besucher der Website:",
+"zh": "网站访客："
 }
 };
 window.I18N_META={"title": {"en": "Emmanuel Global Business Center | Business Rescue, advice, QHSE and vitality in Yaoundé", "es": "Emmanuel Global Business Center | Business Rescue, asesoría, QHSE y vitalidad en Yaundé", "pt": "Emmanuel Global Business Center | Business Rescue, consultoria, QHSE e vitalidade em Yaoundé", "de": "Emmanuel Global Business Center | Business Rescue, Beratung, QHSE und Vitalität in Yaoundé", "zh": "Emmanuel Global Business Center | 雅温得的企业救援、咨询、QHSE 与活力健康"}, "desc": {"en": "Business Rescue, advice for entrepreneurs, QHSE, health and vitality. WhatsApp consultation, Mobile Money payment. Digital products, Edmark, woodworking machines, land in Yaoundé, video editing and websites.", "es": "Business Rescue, asesoría para emprendedores, QHSE, salud y vitalidad. Consulta por WhatsApp, pago por Mobile Money. Productos digitales, Edmark, máquinas de carpintería, terrenos en Yaundé, edición de vídeo y sitios web.", "pt": "Business Rescue, consultoria para empreendedores, QHSE, saúde e vitalidade. Consulta por WhatsApp, pagamento por Mobile Money. Produtos digitais, Edmark, máquinas de marcenaria, terrenos em Yaoundé, edição de vídeo e sites.", "de": "Business Rescue, Beratung für Unternehmer, QHSE, Gesundheit und Vitalität. Beratung per WhatsApp, Zahlung per Mobile Money. Digitale Produkte, Edmark, Holzbearbeitungsmaschinen, Grundstücke in Yaoundé, Videoschnitt und Websites.", "zh": "企业救援、创业者咨询、QHSE、健康与活力。WhatsApp 咨询，Mobile Money 付款。数字产品、Edmark、木工机械、雅温得土地、视频剪辑与网站建设。"}};

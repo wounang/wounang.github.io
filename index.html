@@ -324,6 +324,8 @@
 
   footer { background: #082a1f; color: #b9cfc2; padding: 1.5rem 0; font-size: .95rem; }
   footer strong { color: #fff; display: block; }
+  .visits { margin: .8rem 0 0; font-size: .9rem; color: var(--gold-light); }
+  .visits strong { display: inline; color: #fff; }
 </style>
 </head>
 <body>
@@ -451,7 +453,7 @@
 
   <section class="tool" id="calculateur">
     <div class="wrap">
-      <h2>Calculateur : vendez-vous à perte ?</h2>
+      <h2>Calculateur : faites-vous vraiment du profit ?</h2>
       <p class="lead">Beaucoup d’entrepreneurs vendent sans connaître leur vraie marge. Entrez vos chiffres pour un seul article.</p>
       <label class="fld">Prix de vente (FCFA)
         <input type="number" inputmode="numeric" min="0" id="cPrix" placeholder="ex. 10000">
@@ -968,6 +970,7 @@
       Yaoundé, Cameroun<br>
       +237 677 635 069<br>
       emmanuelwounang@gmail.com
+      <p class="visits" id="visits" hidden>Visiteurs du site : <strong id="visitsN"></strong></p>
     </div>
   </div>
 </footer>
@@ -1117,6 +1120,27 @@
     sel.addEventListener('change', function () { setLang(sel.value); });
     if (start !== 'fr') setLang(start);
   }
+})();
+</script>
+<script>
+/* Compteur de visiteurs : 1 visite par appareil et par jour. Rien ne s'affiche si le service est indisponible. */
+(function () {
+  var box = document.getElementById('visits'), out = document.getElementById('visitsN'), N = null;
+  function show() {
+    if (N === null) return;
+    out.textContent = N.toLocaleString((window.LOCALES && window.LOCALES[window.LANG]) || 'fr-FR');
+    box.hidden = false;
+  }
+  var today = new Date().toISOString().slice(0, 10), seen = false;
+  try { seen = localStorage.getItem('vu') === today; } catch (e) {}
+  fetch('/api/visites' + (seen ? '' : '?hit=1'), { cache: 'no-store' })
+    .then(function (r) { return r.ok ? r.json() : Promise.reject(); })
+    .then(function (d) {
+      if (d && typeof d.n === 'number') { N = d.n; show(); try { localStorage.setItem('vu', today); } catch (e) {} }
+    })
+    .catch(function () {});
+  var sel = document.getElementById('langSel');
+  if (sel) sel.addEventListener('change', show);
 })();
 </script>
 <script>
