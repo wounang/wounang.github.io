@@ -1,4 +1,4 @@
-/* Traductions : en, es, pt, de, zh. Le français est dans la page. À faire relire par des locuteurs natifs. */
+/* */ (function(){try{var s=document.createElement('style');s.textContent='.foot>div{min-width:0;overflow-wrap:anywhere}html,body{overflow-x:hidden}';document.head.appendChild(s)}catch(e){}})(); /* : en, es, pt, de, zh. Le français est dans la page. À faire relire par des locuteurs natifs. */
 window.I18N={
 "Business Rescue, conseil, QHSE et vitalité : l'accompagnement complet de l'entrepreneur, à Yaoundé et au-delà. Consultation par WhatsApp, paiement par Mobile Money.": {
 "en": "Business Rescue, advice, QHSE and vitality: complete support for the entrepreneur, in Yaoundé and beyond. Consultation via WhatsApp, payment by Mobile Money.",
